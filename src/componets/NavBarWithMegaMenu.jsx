@@ -19,61 +19,31 @@ import {
 } from "@heroicons/react/24/outline";
 import {
     Bars4Icon,
-    GlobeAmericasIcon,
-    NewspaperIcon,
-    PhoneIcon,
-    RectangleGroupIcon,
     SquaresPlusIcon,
     SunIcon,
-    TagIcon,
     UserGroupIcon,
 } from "@heroicons/react/24/solid";
 
 const navListMenuItems = [
     {
-        title: "Products",
-        description: "Find the perfect solution for your needs.",
+        title: "LPS Corals",
+        description: "Large Polyp Stony corals",
         icon: SquaresPlusIcon,
     },
     {
-        title: "About Us",
-        description: "Meet and learn about our dedication",
+        title: "SPS Corals",
+        description: "Small Polyp Stony corals",
         icon: UserGroupIcon,
     },
     {
-        title: "Blog",
-        description: "Find the perfect solution for your needs.",
+        title: "Softies",
+        description: "Soft corals",
         icon: Bars4Icon,
     },
     {
-        title: "Services",
-        description: "Learn how we can help you achieve your goals.",
+        title: "Signature Colonies",
+        description: "A collection of my favirote mother colonies",
         icon: SunIcon,
-    },
-    {
-        title: "Support",
-        description: "Reach out to us for assistance or inquiries",
-        icon: GlobeAmericasIcon,
-    },
-    {
-        title: "Contact",
-        description: "Find the perfect solution for your needs.",
-        icon: PhoneIcon,
-    },
-    {
-        title: "News",
-        description: "Read insightful articles, tips, and expert opinions.",
-        icon: NewspaperIcon,
-    },
-    {
-        title: "Products",
-        description: "Find the perfect solution for your needs.",
-        icon: RectangleGroupIcon,
-    },
-    {
-        title: "Special Offers",
-        description: "Explore limited-time deals and bundles",
-        icon: TagIcon,
     },
 ];
 
@@ -84,7 +54,7 @@ function NavListMenu() {
         ({ icon, title, description }, key) => (
             <a href="#" key={key}>
                 <MenuItem className="flex items-center gap-3 rounded-lg">
-                    <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+                    <div className="flex items-center justify-center rounded-lg !bg-red-500 p-2 ">
                         {" "}
                         {React.createElement(icon, {
                             strokeWidth: 2,
@@ -123,11 +93,11 @@ function NavListMenu() {
                 <MenuHandler>
                     <Typography as="div" variant="small" className="font-medium">
                         <ListItem
-                            className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+                            className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 text-lg"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
                         >
-                            Resources
+                            Shop Corals
                             <ChevronDownIcon
                                 strokeWidth={2.5}
                                 className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
@@ -164,7 +134,7 @@ function NavList() {
                 color="blue-gray"
                 className="font-medium"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
+                <ListItem className="flex items-center gap-2 py-2 pr-4 text-lg">Home</ListItem>
             </Typography>
             <NavListMenu />
             <Typography
@@ -174,8 +144,8 @@ function NavList() {
                 color="blue-gray"
                 className="font-medium"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4">
-                    Contact Us
+                <ListItem className="flex items-center gap-2 py-2 pr-4 text-lg">
+                    About
                 </ListItem>
             </Typography>
         </List>
@@ -193,15 +163,15 @@ export function NavbarWithMegaMenu() {
     }, []);
 
     return (
-        <Navbar className="mx-auto max-w-screen-xl px-4 py-2">
+        <Navbar className="mx-auto max-w-screen-xl px-4 py-5">
             <div className="flex items-center justify-between text-blue-gray-900">
                 <Typography
                     as="a"
                     href="#"
                     variant="h6"
-                    className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+                    className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-xl"
                 >
-                    Material Tailwind
+                    Thunder Corals
                 </Typography>
                 <div className="hidden lg:block">
                     <NavList />
