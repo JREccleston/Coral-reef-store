@@ -2,6 +2,7 @@ import './App.css';
 import { NavbarWithMegaMenu } from './componets/NavBarWithMegaMenu';
 import { NewPage } from './componets/NewPage';
 import { SimpleFooter } from './componets/Footer';
+import { HomePageCard } from './componets/HomePageCard';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
       </div>
       <div className="h-screen">
         <NewPage />
+        <HomePageCard />
       </div>
+
       <div className="">
         <SimpleFooter />
       </div>
