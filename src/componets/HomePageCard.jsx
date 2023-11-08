@@ -30,7 +30,7 @@ export function HomePageCard() {
                 </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-                <Button className="rounded-full bg-orange-700">Shop Now</Button>
+                <Button className="rounded-full bg-orange-700 w-32 flex flex-row items-center justify-center m-auto">Shop Now</Button>
             </CardFooter>
         </Card>
     );
