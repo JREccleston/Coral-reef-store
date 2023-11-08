@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import {
     Card,
     CardHeader,
@@ -29,7 +30,7 @@ export function HomePageCard() {
                 </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-                <Button>Read More</Button>
+                <Button className="rounded-full bg-orange-700">Shop Now</Button>
             </CardFooter>
         </Card>
     );
