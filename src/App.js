@@ -6,13 +6,13 @@ import { HomePageCard } from './componets/HomePageCard';
 
 function App() {
   return (
-    <div className=" bg-gradient-to-r from-cyan-500 to-blue-300  w-full h-screen">
+    <div className=" bg-gradient-to-r from-cyan-500 to-blue-300  w-full h-full">
       <div>
         <NavbarWithMegaMenu />
       </div>
       <div className="h-screen">
         <NewPage />
-        <div className='flex flex-row items-center justify-center'>
+        <div className='flex flex-row items-center justify-center mt-20 gap-10'>
           <HomePageCard />
           <HomePageCard />
           <HomePageCard />
