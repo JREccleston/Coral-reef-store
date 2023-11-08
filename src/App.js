@@ -12,7 +12,11 @@ function App() {
       </div>
       <div className="h-screen">
         <NewPage />
-        <HomePageCard />
+        <div className='flex flex-row items-center justify-center'>
+          <HomePageCard />
+          <HomePageCard />
+          <HomePageCard />
+        </div>
       </div>
 
       <div className="">
