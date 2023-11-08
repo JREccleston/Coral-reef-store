@@ -14,7 +14,7 @@ export function SimpleFooter() {
                         as="a"
                         href="#"
                         color="blue-gray"
-                        className="font-normal text-sm transition-colors hover:text-blue-500 focus:text-blue-500"
+                        className="font-normal text-sm transition-colors hover:text-white hover:underline focus:text-white "
                     >
                         Refund Policy
                     </Typography>
@@ -24,7 +24,7 @@ export function SimpleFooter() {
                         as="a"
                         href="#"
                         color="blue-gray"
-                        className="font-normal text-sm transition-colors hover:text-blue-500 focus:text-blue-500"
+                        className="font-normal text-sm transition-colors hover:text-white hover:underline focus:text-white"
                     >
                         Privacy Policy
                     </Typography>
@@ -34,7 +34,7 @@ export function SimpleFooter() {
                         as="a"
                         href="#"
                         color="blue-gray"
-                        className="font-normal text-sm transition-colors hover:text-blue-500 focus:text-blue-500"
+                        className="font-normal text-sm transition-colors hover:text-white hover:underline focus:text-white"
                     >
                         Terms of Service
                     </Typography>
@@ -44,7 +44,7 @@ export function SimpleFooter() {
                         as="a"
                         href="#"
                         color="blue-gray"
-                        className="font-normal text-sm transition-colors hover:text-blue-500 focus:text-blue-500"
+                        className="font-normal text-sm transition-colors hover:text-white hover:underline focus:text-white"
                     >
                         Shipping Policy
                     </Typography>
@@ -54,7 +54,7 @@ export function SimpleFooter() {
                         as="a"
                         href="#"
                         color="blue-gray"
-                        className="font-normal text-sm transition-colors hover:text-blue-500 focus:text-blue-500"
+                        className="font-normal text-sm transition-colors hover:text-white hover:underline focus:text-white"
                     >
                         Contact Information
                     </Typography>

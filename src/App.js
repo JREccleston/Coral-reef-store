@@ -7,10 +7,10 @@ import { HomePageCard } from './componets/HomePageCard';
 function App() {
   return (
     <div className=" bg-gradient-to-r from-cyan-500 to-blue-300  w-full h-full">
-      <div>
+      <div className='flex flex-row items-center justify-center'>
         <NavbarWithMegaMenu />
       </div>
-      <div className="h-screen">
+      <div className="h-screen mt-32">
         <NewPage />
         <div className='flex flex-row items-center justify-center mt-20 gap-10'>
           <HomePageCard />

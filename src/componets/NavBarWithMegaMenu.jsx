@@ -167,7 +167,7 @@ export function NavbarWithMegaMenu() {
         <Navbar
             variant="gradient"
             color="white"
-            className="mx-auto max-w-screen-xl px-4 py-5">
+            className="mx-auto w-full px-10 py-5 fixed top-0 z-50">
 
 
             <div className="flex items-center justify-between text-blue-700">
