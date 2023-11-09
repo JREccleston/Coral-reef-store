@@ -93,9 +93,9 @@ function NavListMenu() {
                 <MenuHandler>
                     <Typography as="div" variant="small" className="font-medium ">
                         <Button
-                            size="lg"
+                            size="sm"
                             variant="text"
-                            className="font-kalam relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black"
+                            className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
                         >
@@ -132,13 +132,10 @@ function NavList() {
             <Typography
                 as="a"
                 href="#"
-                variant="small"
-                color="black"
-                className="font-medium"
             >
-                <Button size="lg"
+                <Button size="sm"
                     variant="text"
-                    className="font-kalam relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
+                    className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
                     Home
                 </Button>
             </Typography>
@@ -146,13 +143,10 @@ function NavList() {
             <Typography
                 as="a"
                 href="#"
-                variant="small"
-                color="black"
-                className="font-medium font-kalam"
             >
-                <Button size="lg"
+                <Button size="sm"
                     variant="text"
-                    className="font-kalam relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
+                    className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
                     About
                 </Button>
             </Typography>
@@ -173,9 +167,10 @@ export function NavbarWithMegaMenu() {
 
     return (
         <Navbar
-            variant="gradient"
+            variant="filled"
             color="white"
-            className="mx-auto w-full px-10 py-5 fixed top-0 z-50">
+            shadow=""
+            className="mx-auto w-full px-12 py-0 fixed top-0 z-50">
 
 
             <div className="flex items-center justify-between text-blue-700">
@@ -183,7 +178,7 @@ export function NavbarWithMegaMenu() {
                     as="a"
                     href="#"
                     variant="h6"
-                    className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-3xl font-kalam"
+                    className="mr-4 mt-4 cursor-pointer py-1.5 lg:ml-2 text-3xl font-kalam"
                 >
                     Thunder Corals
                 </Typography>
@@ -194,13 +189,13 @@ export function NavbarWithMegaMenu() {
                     <Button
                         size="sm"
                         variant="text"
-                        className="font-kalam relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
+                        className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
                         Login
                     </Button>
                     <Button
                         size="sm"
                         variant="text"
-                        className=" font-kalam relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
+                        className=" font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
                         Sign In
                     </Button>
                 </div>
