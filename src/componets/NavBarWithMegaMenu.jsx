@@ -61,17 +61,16 @@ function NavListMenu() {
                             className: "h-6 text-gray-900 w-6",
                         })}
                     </div>
-                    <div>
+                    <div className=' text-blue-700 font-kalam'>
                         <Typography
                             variant="h6"
-                            color="blue-gray"
-                            className="flex items-center text-sm font-bold"
+                            className="flex items-center font-kalam text-lg"
                         >
                             {title}
                         </Typography>
                         <Typography
                             variant="paragraph"
-                            className="text-xs !font-medium text-blue-gray-500"
+                            className=" text-base !font-medium text-black font-Nuecha"
                         >
                             {description}
                         </Typography>
@@ -91,9 +90,9 @@ function NavListMenu() {
                 allowHover={true}
             >
                 <MenuHandler>
-                    <Typography as="div" variant="small" className="font-medium">
+                    <Typography as="div" variant="small" className="font-medium ">
                         <ListItem
-                            className="flex items-center gap-2 py-2 pr-4 font-medium text-blue-700 text-lg hover:bg-cyan-100"
+                            className="flex items-center gap-2 py-2 pr-4 font-medium text-blue-700 text-lg hover:bg-orange-700 font-kalam"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
                         >
@@ -134,7 +133,7 @@ function NavList() {
                 color="black"
                 className="font-medium"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4 text-lg text-blue-700 hover:bg-cyan-100">Home</ListItem>
+                <ListItem className="flex items-center gap-2 py-2 pr-4 text-lg text-blue-700 hover:bg-orange-700 font-kalam">Home</ListItem>
             </Typography>
             <NavListMenu />
             <Typography
@@ -142,9 +141,9 @@ function NavList() {
                 href="#"
                 variant="small"
                 color="black"
-                className="font-medium"
+                className="font-medium font-kalam"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4 text-lg text-blue-700 hover:bg-cyan-100">
+                <ListItem className="flex items-center gap-2 py-2 pr-4 text-lg text-blue-700 hover:bg-orange-700 font-kalam">
                     About
                 </ListItem>
             </Typography>
@@ -175,7 +174,7 @@ export function NavbarWithMegaMenu() {
                     as="a"
                     href="#"
                     variant="h6"
-                    className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-xl"
+                    className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-xl font-kalam"
                 >
                     Thunder Corals
                 </Typography>
@@ -183,13 +182,13 @@ export function NavbarWithMegaMenu() {
                     <NavList />
                 </div>
                 <div className="hidden gap-2 lg:flex">
-                    <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-r from-cyan-500 to-blue-300 group-hover:from-cyan-500 group-hover:to-blue-300 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-                        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white  dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-base font-medium text-blue-700 rounded-lg group-hover:from-cyan-500 group-hover:to-blue-300 hover:text-black focus:ring-4 focus:outline-none focus:ring-orange-700">
+                        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 hover:bg-orange-700 bg-transparent rounded-md group-hover:bg-opacity-0">
                             Login
                         </span>
                     </button>
-                    <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-r from-cyan-500 to-blue-300 group-hover:from-cyan-500 group-hover:to-blue-300 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-                        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white  dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-base font-medium text-blue-700 rounded-lg group-hover:from-cyan-500 group-hover:to-blue-300 hover:text-black  focus:ring-4 focus:outline-none focus:ring-orange-700">
+                        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 hover:bg-orange-700 bg-transparent rounded-md group-hover:bg-opacity-0">
                             Sign In
                         </span>
                     </button>

@@ -6,6 +6,7 @@ import { HomePageCard } from './componets/HomePageCard';
 import { lpsDesc, spsDesc, sftDesc } from './componets/strings';
 
 
+
 function App() {
   return (
     <div className=" bg-gradient-to-r from-cyan-500 to-blue-300  w-full h-full">

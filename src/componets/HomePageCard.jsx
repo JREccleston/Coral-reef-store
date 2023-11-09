@@ -26,7 +26,7 @@ export function HomePageCard({ species, coralType }) {
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                     UI/UX Review Check
                 </Typography>
-                <Typography>
+                <Typography className='font-Nuecha'>
                     {species}
                 </Typography>
             </CardBody>
