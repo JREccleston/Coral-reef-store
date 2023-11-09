@@ -24,6 +24,7 @@ import {
     UserGroupIcon,
 } from "@heroicons/react/24/solid";
 
+
 const navListMenuItems = [
     {
         title: "LPS Corals",
@@ -91,8 +92,10 @@ function NavListMenu() {
             >
                 <MenuHandler>
                     <Typography as="div" variant="small" className="font-medium ">
-                        <ListItem
-                            className="flex items-center gap-2 py-2 pr-4 font-medium text-blue-700 text-lg hover:bg-orange-700 font-kalam"
+                        <Button
+                            size="lg"
+                            variant="text"
+                            className="font-kalam relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
                         >
@@ -107,7 +110,7 @@ function NavListMenu() {
                                 className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
                                     }`}
                             />
-                        </ListItem>
+                        </Button>
                     </Typography>
                 </MenuHandler>
                 <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
@@ -133,7 +136,11 @@ function NavList() {
                 color="black"
                 className="font-medium"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4 text-lg text-blue-700 hover:bg-orange-700 font-kalam">Home</ListItem>
+                <Button size="lg"
+                    variant="text"
+                    className="font-kalam relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
+                    Home
+                </Button>
             </Typography>
             <NavListMenu />
             <Typography
@@ -143,9 +150,11 @@ function NavList() {
                 color="black"
                 className="font-medium font-kalam"
             >
-                <ListItem className="flex items-center gap-2 py-2 pr-4 text-lg text-blue-700 hover:bg-orange-700 font-kalam">
+                <Button size="lg"
+                    variant="text"
+                    className="font-kalam relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
                     About
-                </ListItem>
+                </Button>
             </Typography>
         </List>
     );
@@ -174,7 +183,7 @@ export function NavbarWithMegaMenu() {
                     as="a"
                     href="#"
                     variant="h6"
-                    className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-xl font-kalam"
+                    className="mr-4 cursor-pointer py-1.5 lg:ml-2 text-3xl font-kalam"
                 >
                     Thunder Corals
                 </Typography>
@@ -182,16 +191,18 @@ export function NavbarWithMegaMenu() {
                     <NavList />
                 </div>
                 <div className="hidden gap-2 lg:flex">
-                    <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-base font-medium text-blue-700 rounded-lg group-hover:from-cyan-500 group-hover:to-blue-300 hover:text-black focus:ring-4 focus:outline-none focus:ring-orange-700">
-                        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 hover:bg-orange-700 bg-transparent rounded-md group-hover:bg-opacity-0">
-                            Login
-                        </span>
-                    </button>
-                    <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-base font-medium text-blue-700 rounded-lg group-hover:from-cyan-500 group-hover:to-blue-300 hover:text-black  focus:ring-4 focus:outline-none focus:ring-orange-700">
-                        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 hover:bg-orange-700 bg-transparent rounded-md group-hover:bg-opacity-0">
-                            Sign In
-                        </span>
-                    </button>
+                    <Button
+                        size="sm"
+                        variant="text"
+                        className="font-kalam relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
+                        Login
+                    </Button>
+                    <Button
+                        size="sm"
+                        variant="text"
+                        className=" font-kalam relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
+                        Sign In
+                    </Button>
                 </div>
                 <IconButton
                     variant="text"
@@ -209,7 +220,7 @@ export function NavbarWithMegaMenu() {
             <Collapse open={openNav}>
                 <NavList />
                 <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-                    <Button variant="outlined" size="sm" className="text-blue-700 border-orange-400 text-lg font-kalam" fullWidth>
+                    <Button ripple={true} variant="outlined" size="sm" className="text-blue-700 border-orange-400 text-lg font-kalam" fullWidth>
                         Log In
                     </Button>
                     <Button size="sm" className="text-blue-700 bg-orange-400 text-lg font-kalam" fullWidth>
@@ -219,4 +230,5 @@ export function NavbarWithMegaMenu() {
             </Collapse>
         </Navbar>
     );
+
 }
