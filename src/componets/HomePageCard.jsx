@@ -10,7 +10,10 @@ import {
     Button,
 } from "@material-tailwind/react";
 
-export function HomePageCard() {
+const spsDescription = "LPS corals, which stands for Large Polyp Stony corals, are excellent choices for novice aquarium enthusiasts. They are known for their vibrant colors and dynamic appearance, making them a fantastic addition to any coral reef aquarium.";
+
+
+export function HomePageCard({ species }) {
     return (
         <Card className="mt-6 w-96">
             <CardHeader color="blue-gray" className="relative h-56">
@@ -24,9 +27,7 @@ export function HomePageCard() {
                     UI/UX Review Check
                 </Typography>
                 <Typography>
-                    The place is close to Barceloneta Beach and bus stop just 2 min by
-                    walk and near to &quot;Naviglio&quot; where you can enjoy the main
-                    night life in Barcelona.
+                    {species}
                 </Typography>
             </CardBody>
             <CardFooter className="pt-0">

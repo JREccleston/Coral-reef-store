@@ -3,6 +3,8 @@ import { NavbarWithMegaMenu } from './componets/NavBarWithMegaMenu';
 import { NewPage } from './componets/NewPage';
 import { SimpleFooter } from './componets/Footer';
 import { HomePageCard } from './componets/HomePageCard';
+import { lpsDesc, spsDesc, sftDesc } from './componets/strings';
+
 
 function App() {
   return (
@@ -13,9 +15,11 @@ function App() {
       <div className="h-screen mt-32">
         <NewPage />
         <div className='flex flex-row items-center justify-center mt-20 gap-10'>
-          <HomePageCard />
-          <HomePageCard />
-          <HomePageCard />
+          <HomePageCard species={lpsDesc} />
+
+          <HomePageCard species={spsDesc} />
+
+          <HomePageCard species={sftDesc} />
         </div>
       </div>
 
