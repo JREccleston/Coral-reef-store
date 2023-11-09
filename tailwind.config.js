@@ -8,6 +8,11 @@ module.exports = withMT({
       'kalam': ['Kalam', 'cursive'],
       'Nuecha': ['Neucha', 'cursive']
     },
+    colors: {
+      'b1': ' #caf0f8',
+      'b2': '#90e0ef',
+      'o1': ' #219ebc '
+    }
   },
   plugins: [],
 });

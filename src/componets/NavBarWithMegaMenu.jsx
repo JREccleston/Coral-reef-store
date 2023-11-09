@@ -53,9 +53,11 @@ function NavListMenu() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const renderItems = navListMenuItems.map(
         ({ icon, title, description }, key) => (
+
             <a href="#" key={key}>
-                <MenuItem className="flex items-center gap-3 rounded-lg">
-                    <div className="flex items-center justify-center rounded-lg !bg-cyan-100 p-2 ">
+
+                <MenuItem className="flex items-center gap-3 rounded-lg hover:bg-orange-700">
+                    <div className="flex items-center justify-center rounded-lg !bg-cyan-500 p-2 ">
                         {" "}
                         {React.createElement(icon, {
                             strokeWidth: 2,
@@ -77,7 +79,9 @@ function NavListMenu() {
                         </Typography>
                     </div>
                 </MenuItem>
+
             </a>
+
         ),
     );
 
@@ -95,7 +99,7 @@ function NavListMenu() {
                         <Button
                             size="sm"
                             variant="text"
-                            className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black"
+                            className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black"
                             selected={isMenuOpen || isMobileMenuOpen}
                             onClick={() => setIsMobileMenuOpen((cur) => !cur)}
                         >
@@ -113,7 +117,7 @@ function NavListMenu() {
                         </Button>
                     </Typography>
                 </MenuHandler>
-                <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
+                <MenuList className="hidden max-w-screen-xl rounded-xl lg:block bg-slate2">
                     <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
                         {renderItems}
                     </ul>
@@ -135,7 +139,7 @@ function NavList() {
             >
                 <Button size="sm"
                     variant="text"
-                    className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
+                    className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black">
                     Home
                 </Button>
             </Typography>
@@ -146,7 +150,7 @@ function NavList() {
             >
                 <Button size="sm"
                     variant="text"
-                    className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
+                    className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black">
                     About
                 </Button>
             </Typography>
@@ -168,20 +172,21 @@ export function NavbarWithMegaMenu() {
     return (
         <Navbar
             variant="filled"
-            color="white"
-            shadow=""
-            className="mx-auto w-full px-12 py-0 fixed top-0 z-50">
+            fullWidth='true'
+            blurred='false'
+            shadow='true'
+            className="mx-auto w-full px-12 pb-5 fixed top-0 z-50 bg-b1 border-transparent">
 
 
             <div className="flex items-center justify-between text-blue-700">
-                <Typography
+                < Typography
                     as="a"
                     href="#"
                     variant="h6"
                     className="mr-4 mt-4 cursor-pointer py-1.5 lg:ml-2 text-3xl font-kalam"
                 >
                     Thunder Corals
-                </Typography>
+                </Typography >
                 <div className="hidden lg:block">
                     <NavList />
                 </div>
@@ -189,20 +194,19 @@ export function NavbarWithMegaMenu() {
                     <Button
                         size="sm"
                         variant="text"
-                        className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
+                        className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
                         Login
                     </Button>
                     <Button
                         size="sm"
                         variant="text"
-                        className=" font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-blue-700 rounded-lg hover:bg-orange-700 hover:text-black">
+                        className=" font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
                         Sign In
                     </Button>
                 </div>
                 <IconButton
                     variant="text"
-                    color="blue-gray"
-                    className="lg:hidden"
+                    className="lg:hidden text-blue-700"
                     onClick={() => setOpenNav(!openNav)}
                 >
                     {openNav ? (
@@ -211,7 +215,7 @@ export function NavbarWithMegaMenu() {
                         <Bars3Icon className="h-6 w-6" strokeWidth={2} />
                     )}
                 </IconButton>
-            </div>
+            </div >
             <Collapse open={openNav}>
                 <NavList />
                 <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
@@ -223,7 +227,7 @@ export function NavbarWithMegaMenu() {
                     </Button>
                 </div>
             </Collapse>
-        </Navbar>
+        </Navbar >
     );
 
 }

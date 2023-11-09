@@ -9,7 +9,7 @@ import { lpsDesc, spsDesc, sftDesc } from './componets/strings';
 
 function App() {
   return (
-    <div className=" bg-gradient-to-r from-cyan-500 to-blue-300  w-full h-full">
+    <div className=" bg-b2  w-full h-full">
       <div className='flex flex-row items-center justify-center'>
         <NavbarWithMegaMenu />
       </div>
