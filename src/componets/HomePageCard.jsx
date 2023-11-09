@@ -13,7 +13,7 @@ import {
 const spsDescription = "LPS corals, which stands for Large Polyp Stony corals, are excellent choices for novice aquarium enthusiasts. They are known for their vibrant colors and dynamic appearance, making them a fantastic addition to any coral reef aquarium.";
 
 
-export function HomePageCard({ species }) {
+export function HomePageCard({ species, coralType }) {
     return (
         <Card className="mt-6 w-96">
             <CardHeader color="blue-gray" className="relative h-56">
@@ -31,7 +31,7 @@ export function HomePageCard({ species }) {
                 </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-                <Button className="rounded-full bg-orange-700 w-32 flex flex-row items-center justify-center m-auto">Shop Now</Button>
+                <Button className="rounded-full bg-orange-700 w-36 flex flex-row items-center justify-center m-auto">Shop {coralType}</Button>
             </CardFooter>
         </Card>
     );

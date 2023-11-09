@@ -15,11 +15,11 @@ function App() {
       <div className="h-screen mt-32">
         <NewPage />
         <div className='flex flex-row items-center justify-center mt-20 gap-10'>
-          <HomePageCard species={lpsDesc} />
+          <HomePageCard species={lpsDesc} coralType={"LPS"} />
 
-          <HomePageCard species={spsDesc} />
+          <HomePageCard species={spsDesc} coralType={"SPS"} />
 
-          <HomePageCard species={sftDesc} />
+          <HomePageCard species={sftDesc} coralType={"Softies"} />
         </div>
       </div>
 
