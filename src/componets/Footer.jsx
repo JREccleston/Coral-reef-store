@@ -14,7 +14,7 @@ export function SimpleFooter() {
                         as="a"
                         href="#"
                         color="blue-gray"
-                        className="font-kalam font-normal text-sm transition-colors hover:text-white hover:underline focus:text-white "
+                        className="font-kalam font-normal text-sm transition-colors hover:text-orange-700 hover:underline "
                     >
                         Refund Policy
                     </Typography>
@@ -24,7 +24,7 @@ export function SimpleFooter() {
                         as="a"
                         href="#"
                         color="blue-gray"
-                        className="font-kalam font-normal text-sm transition-colors hover:text-white hover:underline focus:text-white"
+                        className="font-kalam font-normal text-sm transition-colors hover:text-orange-700 hover:underline"
                     >
                         Privacy Policy
                     </Typography>
@@ -34,7 +34,7 @@ export function SimpleFooter() {
                         as="a"
                         href="#"
                         color="blue-gray"
-                        className="font-kalam font-normal text-sm transition-colors hover:text-white hover:underline focus:text-white"
+                        className="font-kalam font-normal text-sm transition-colors hover:text-orange-700 hover:underline"
                     >
                         Terms of Service
                     </Typography>
@@ -44,7 +44,7 @@ export function SimpleFooter() {
                         as="a"
                         href="#"
                         color="blue-gray"
-                        className="font-kalam font-normal text-sm transition-colors hover:text-white hover:underline focus:text-white"
+                        className="font-kalam font-normal text-sm transition-colors hover:text-orange-700 hover:underline"
                     >
                         Shipping Policy
                     </Typography>
@@ -54,7 +54,7 @@ export function SimpleFooter() {
                         as="a"
                         href="#"
                         color="blue-gray"
-                        className="font-kalam font-normal text-sm transition-colors hover:text-white hover:underline focus:text-white"
+                        className="font-kalam font-normal text-sm transition-colors hover:text-orange-700 hover:underline"
                     >
                         Contact Information
                     </Typography>

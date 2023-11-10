@@ -117,7 +117,7 @@ function NavListMenu() {
                         </Button>
                     </Typography>
                 </MenuHandler>
-                <MenuList className="hidden max-w-screen-xl rounded-xl lg:block bg-slate2">
+                <MenuList className="hidden max-w-screen-xl rounded-xl lg:block bg-sky100">
                     <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
                         {renderItems}
                     </ul>

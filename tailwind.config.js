@@ -13,9 +13,9 @@ module.exports = withMT({
       'b2': '#90e0ef',
       'o1': ' #219ebc',
       'sky100': '#e0f2fe'
-    }
-  },
-  plugins: [],
+    },
+
+  }
 });
 
 

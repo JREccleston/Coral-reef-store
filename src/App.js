@@ -3,7 +3,8 @@ import { NavbarWithMegaMenu } from './componets/NavBarWithMegaMenu';
 import { NewPage } from './componets/NewPage';
 import { SimpleFooter } from './componets/Footer';
 import { HomePageCard } from './componets/HomePageCard';
-import { lpsDesc, spsDesc, sftDesc } from './componets/strings';
+import { lpsDesc, spsDesc, sftDesc, acroPic, hammerPic, zoaPic } from './componets/strings';
+
 
 
 
@@ -16,11 +17,11 @@ function App() {
       <div className="h-screen mt-32">
         <NewPage />
         <div className='flex flex-row items-center justify-center mt-20 gap-10'>
-          <HomePageCard species={lpsDesc} coralType={"LPS"} />
+          <HomePageCard species={lpsDesc} coralType={"LPS"} coralImg={hammerPic} />
 
-          <HomePageCard species={spsDesc} coralType={"SPS"} />
+          <HomePageCard species={spsDesc} coralType={"SPS"} coralImg={acroPic} />
 
-          <HomePageCard species={sftDesc} coralType={"Softies"} />
+          <HomePageCard species={sftDesc} coralType={"Softies"} coralImg={zoaPic} />
         </div>
       </div>
 
