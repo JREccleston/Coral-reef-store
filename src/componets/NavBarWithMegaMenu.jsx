@@ -1,4 +1,5 @@
 import React from "react";
+import { UilShoppingCart } from '@iconscout/react-unicons'
 import {
     Navbar,
     Collapse,
@@ -178,7 +179,7 @@ export function NavbarWithMegaMenu() {
             className="mx-auto w-full px-12 pb-5 fixed top-0 z-50 bg-b1 border-transparent">
 
 
-            <div className="flex items-center justify-between text-black">
+            <div className="flex items-center justify-between text-black ml-16">
                 < Typography
                     as="a"
                     href="#"
@@ -190,18 +191,18 @@ export function NavbarWithMegaMenu() {
                 <div className="hidden lg:block">
                     <NavList />
                 </div>
-                <div className="hidden gap-2 lg:flex">
+                <div className="hidden gap-1 lg:flex mr-16">
                     <Button
                         size="sm"
                         variant="text"
-                        className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
+                        className="font-kalam relative inline-flex items-center justify-center mt-4 mr-0 overflow-hidden text-lg font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
                         Login
                     </Button>
                     <Button
                         size="sm"
                         variant="text"
-                        className=" font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
-                        Sign In
+                        className="relative inline-flex items-center justify-center mt-4 mr-2 px-1 overflow-hidden rounded-lg hover:bg-orange-700">
+                        <UilShoppingCart size={27} color="black" />
                     </Button>
                 </div>
                 <IconButton
@@ -222,8 +223,8 @@ export function NavbarWithMegaMenu() {
                     <Button ripple={true} variant="outlined" size="sm" className="text-blue-700 border-orange-400 text-lg font-kalam" fullWidth>
                         Log In
                     </Button>
-                    <Button size="sm" className="text-blue-700 bg-orange-400 text-lg font-kalam" fullWidth>
-                        Sign In
+                    <Button size="sm" className="flex flex-row items-center justify-center bg-orange-400 text-lg font-kalam" fullWidth>
+                        <UilShoppingCart size={27} color="black" />
                     </Button>
                 </div>
             </Collapse>

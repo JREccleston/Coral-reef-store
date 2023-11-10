@@ -1,9 +1,9 @@
 import './App.css';
 import { NavbarWithMegaMenu } from './componets/NavBarWithMegaMenu';
-import { NewPage } from './componets/NewPage';
+import { HomePage } from './componets/HomePage';
 import { SimpleFooter } from './componets/Footer';
 import { HomePageCard } from './componets/HomePageCard';
-import { lpsDesc, spsDesc, sftDesc, acroPic, hammerPic, zoaPic } from './componets/strings';
+import { lpsDesc, spsDesc, sftDesc, acroPic, hammerPic, zoaPic, lpsCategory, spsCategory, sftCategory } from './componets/strings';
 
 
 
@@ -15,17 +15,17 @@ function App() {
         <NavbarWithMegaMenu />
       </div>
       <div className="h-screen mt-32">
-        <NewPage />
+        <HomePage />
         <div className='flex flex-row items-center justify-center mt-20 gap-10'>
-          <HomePageCard species={lpsDesc} coralType={"LPS"} coralImg={hammerPic} />
+          <HomePageCard species={lpsDesc} coralType={"LPS"} coralImg={hammerPic} coralCategory={lpsCategory} />
 
-          <HomePageCard species={spsDesc} coralType={"SPS"} coralImg={acroPic} />
+          <HomePageCard species={spsDesc} coralType={"SPS"} coralImg={acroPic} coralCategory={spsCategory} />
 
-          <HomePageCard species={sftDesc} coralType={"Softies"} coralImg={zoaPic} />
+          <HomePageCard species={sftDesc} coralType={"Softies"} coralImg={zoaPic} coralCategory={sftCategory} />
         </div>
       </div>
 
-      <div className="">
+      <div className="pt-20">
         <SimpleFooter />
       </div>
 
