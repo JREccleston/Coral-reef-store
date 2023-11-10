@@ -1,5 +1,6 @@
 import React from "react";
 import { UilShoppingCart } from '@iconscout/react-unicons'
+
 import {
     Navbar,
     Collapse,
@@ -138,6 +139,7 @@ function NavList() {
                 as="a"
                 href="#"
             >
+
                 <Button size="sm"
                     variant="text"
                     className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black">
@@ -151,7 +153,7 @@ function NavList() {
             >
                 <Button size="sm"
                     variant="text"
-                    className="font-kalam relative inline-flex items-center justify-center mt-4 mr-2 overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black">
+                    className="font-kalam relative inline-flex items-center justify-center mt-4 mr-20  overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black">
                     About
                 </Button>
             </Typography>
@@ -173,25 +175,23 @@ export function NavbarWithMegaMenu() {
     return (
         <Navbar
             variant="filled"
-            fullWidth='true'
-            blurred='false'
-            shadow='true'
-            className="mx-auto w-full px-12 pb-5 fixed top-0 z-50 bg-b1 border-transparent">
+            fullWidth={true}
+            className="mx-auto w-full px-32 pb-3 fixed top-0 z-50 bg-b1 border-transparent">
 
 
-            <div className="flex items-center justify-between text-black ml-16">
+            <div className="flex items-center justify-between text-black ">
                 < Typography
                     as="a"
                     href="#"
                     variant="h6"
-                    className="mr-4 mt-4 cursor-pointer py-1.5 lg:ml-2 text-3xl font-kalam"
+                    className="mt-4 mr-0 cursor-pointer py-1.5 pr-0 lg:ml-2 text-3xl font-kalam"
                 >
                     Thunder Corals
                 </Typography >
                 <div className="hidden lg:block">
                     <NavList />
                 </div>
-                <div className="hidden gap-1 lg:flex mr-16">
+                <div className="hidden gap-1 lg:flex">
                     <Button
                         size="sm"
                         variant="text"

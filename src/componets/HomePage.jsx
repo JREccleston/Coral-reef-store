@@ -7,7 +7,7 @@ export function HomePage() {
                 Thunder Corals
             </p>
         </div>
-            <p className="text-4xl text-black items-center justify-center flex flex-row">
+            <p className="text-4xl text-black items-center justify-center flex flex-row pb-4">
                 High Quality
             </p>
             <p className="text-4xl text-black items-center justify-center flex flex-row">
