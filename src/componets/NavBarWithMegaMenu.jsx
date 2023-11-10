@@ -178,7 +178,7 @@ export function NavbarWithMegaMenu() {
             className="mx-auto w-full px-12 pb-5 fixed top-0 z-50 bg-b1 border-transparent">
 
 
-            <div className="flex items-center justify-between text-blue-700">
+            <div className="flex items-center justify-between text-black">
                 < Typography
                     as="a"
                     href="#"

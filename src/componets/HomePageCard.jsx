@@ -13,18 +13,18 @@ import {
 
 export function HomePageCard({ species, coralType }) {
     return (
-        <Card className="mt-6 w-96">
-            <CardHeader color="blue-gray" className="relative h-56">
+        <Card className="mt-6 w-96 bg-sky100">
+            <CardHeader className="relative h-56">
                 <img
                     src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
                     alt="card-image"
                 />
             </CardHeader>
-            <CardBody className='bg-o1'>
-                <Typography variant="h5" color="blue-gray" className="mb-2">
+            <CardBody className='bg-sky100'>
+                <Typography variant="h5" className="mb-2 text-black">
                     UI/UX Review Check
                 </Typography>
-                <Typography className='font-Nuecha'>
+                <Typography className='font-Nuecha text-black'>
                     {species}
                 </Typography>
             </CardBody>

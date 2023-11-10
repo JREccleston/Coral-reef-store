@@ -11,7 +11,8 @@ module.exports = withMT({
     colors: {
       'b1': ' #caf0f8',
       'b2': '#90e0ef',
-      'o1': ' #219ebc '
+      'o1': ' #219ebc',
+      'sky100': '#e0f2fe'
     }
   },
   plugins: [],
