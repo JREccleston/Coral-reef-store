@@ -1,11 +1,12 @@
 import React from 'react'
+import { SimpleFooter } from '../componets/Footer'
 
 function RefundPolicy() {
     return (
-        <div className='bg-b2 w-full h-screen'>
-            <div className='inline text-center mx-auto font-sans'>
+        <div className='bg-b2 w-full'>
+            <div className='text-center mx-auto font-sans h-screen'>
                 <h1 className='pt-20 text-6xl'>Refund Policy</h1>
-                <p className="w-1/2 mt-12 text-center mx-auto text-lg">
+                <p className="w-1/2 pt-12 text-center mx-auto text-lg">
                     All sales are final. Cancellations will be dealt with on a situational basis.
                     We understand that emergencies can arise and will do our best to make it fair for both parties involved.
                 </p>
@@ -17,9 +18,15 @@ function RefundPolicy() {
                     This policy is implemented to assist Thunder Corals in mitigating losses incurred due to factors beyond their control, such as carrier delays or unforeseen acts of nature.
                 </p>
             </div>
+            <div className="">
+                <SimpleFooter />
+            </div>
         </div>
+
     )
+
 }
+
 
 export default RefundPolicy
 

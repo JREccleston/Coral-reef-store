@@ -26,7 +26,7 @@ function App() {
         </div>
       </div>
 
-      <div className="pt-20">
+      <div className="pt-20 pb-0">
         <SimpleFooter />
       </div>
 

@@ -1,8 +1,9 @@
 import React from 'react'
+import { SimpleFooter } from '../componets/Footer'
 
 function PrivacyPolicy() {
     return (
-        <div className='font-light px-8 font-sans bg-b2 py-5'>
+        <div className='font-light px-8 font-sans bg-b2 pt-5'>
             <h1 className='text-6xl py-5'>Privacy Policy</h1>
             <p>Last updated: November 13, 2023</p>
             <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
@@ -199,6 +200,9 @@ function PrivacyPolicy() {
             <ul className='pl-10 list-disc'>
                 <li>By email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="46322e3328222334252934272a3506212b272f2a6825292b">[email&#160;protected]</a></li>
             </ul><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+            <div className="bottom-0">
+                <SimpleFooter />
+            </div>
         </div>
     )
 }
