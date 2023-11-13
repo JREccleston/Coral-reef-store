@@ -3,7 +3,7 @@ import { UilShoppingCart } from '@iconscout/react-unicons'
 export function HomePage() {
     return (
         <div><div>
-            <p className="text-6xl text-black items-center justify-center flex flex-row py-10">
+            <p className="text-6xl text-black items-center justify-center flex flex-row py-8">
                 Thunder Corals
             </p>
         </div>

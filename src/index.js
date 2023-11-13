@@ -8,8 +8,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import PrivacyPolicy from './Pages/PrivacyPolicy';
-import TermsOfService from './Pages/TermsOfService';
+
 import ShippingPolicy from './Pages/ShippingPolicy';
 import ContactInformation from './Pages/ContactInformation';
 
@@ -22,14 +21,6 @@ const router = createBrowserRouter([
   {
     path: "RefundPolicy",
     element: <RefundPolicy />,
-  },
-  {
-    path: "PrivacyPolicy",
-    element: <PrivacyPolicy />,
-  },
-  {
-    path: "TermsOfService",
-    element: <TermsOfService />,
   },
   {
     path: "ShippingPolicy",

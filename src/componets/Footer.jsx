@@ -14,12 +14,6 @@ export function SimpleFooter() {
                     <Link to='/RefundPolicy'>Refund Policy</Link>
                 </li>
                 <li className="font-kalam font-light text-sm transition-colors hover:text-orange-700 hover:underline ">
-                    <Link to='/PrivacyPolicy'>Privacy Policy</Link>
-                </li>
-                <li className="font-kalam font-light text-sm transition-colors hover:text-orange-700 hover:underline ">
-                    <Link to='/TermsOfService'>Terms of Service</Link>
-                </li>
-                <li className="font-kalam font-light text-sm transition-colors hover:text-orange-700 hover:underline ">
                     <Link to='/ShippingPolicy'>Shipping Policy</Link>
                 </li>
                 <li className="font-kalam font-light text-sm transition-colors hover:text-orange-700 hover:underline ">
