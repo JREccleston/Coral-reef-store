@@ -2,15 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { DefaultSidebar, NavbarWithMegaMenu } from './componets/NavBarWithMegaMenu';
-import { ThemeProvider } from "@material-tailwind/react";
+import RefundPolicy from './Pages/RefundPolicy';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "RefundPolicy",
+    element: <RefundPolicy />,
+  },
+]);
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-  <App />
+  <RouterProvider router={router} />
 
 );
 

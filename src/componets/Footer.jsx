@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Typography } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 export function SimpleFooter() {
     return (
@@ -9,15 +10,10 @@ export function SimpleFooter() {
                 &copy; 2023 Thunder Corals
             </Typography>
             <ul className="flex flex-wrap items-center gap-y-2 gap-x-3">
-                <li>
-                    <Typography
-                        as="a"
-                        href="#"
-                        color="blue-gray"
-                        className="font-kalam font-normal text-sm transition-colors hover:text-orange-700 hover:underline "
-                    >
-                        Refund Policy
-                    </Typography>
+                <li className="font-kalam font-normal text-sm transition-colors hover:text-orange-700 hover:underline ">
+
+                    <Link to='/RefundPolicy'>Refund Policy</Link>
+
                 </li>
                 <li>
                     <Typography
@@ -63,3 +59,6 @@ export function SimpleFooter() {
         </footer>
     );
 }
+
+
+
