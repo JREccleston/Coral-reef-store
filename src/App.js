@@ -26,7 +26,7 @@ function App() {
         </div>
       </div>
 
-      <div className="pt-20 pb-0 sticky top-[100vh]">
+      <div className="mt-20 pb-0 sticky top-[100vh]">
         <SimpleFooter />
       </div>
 
