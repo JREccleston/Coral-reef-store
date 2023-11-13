@@ -8,6 +8,7 @@ import { lpsDesc, spsDesc, sftDesc, acroPic, hammerPic, zoaPic, lpsCategory, sps
 
 
 
+
 function App() {
   return (
     <div className=" bg-b2  w-full h-full">

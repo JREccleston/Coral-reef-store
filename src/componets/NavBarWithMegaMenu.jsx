@@ -186,7 +186,7 @@ export function NavbarWithMegaMenu() {
                 >
                     <img
                         className="w-72"
-                        src="https://lh3.googleusercontent.com/pw/ADCreHeYZ7JHhaEaxmZTWoMhLYH7AZ4MF_h5kRhCng2l0Xqkrl0wr7M8jJrRCrSbvss7c3382goVdgnNXrkRhUw7gHXEWzZpF1Pyi9qvOzxYLAnRyNKi7HleZjDYTGUSOJMCycIRQmQIzQIf9Hl6lGBLf2enlBy6NroQDHNAqr-4yfofhM-aBtgtj2m5P2FlXFEHyiJQG6OSICvg-qdBKUV3vhI_hdJ-eL-9gagKH8xm9A6aP50X95yyEnj8krIOgZUWGZtElDb6DQapVRWC1l1apcIUj3lXPWme6Hq7RgPmrQeH660x70yrhUjGcvkubgHVjqSUC0eOpV6-7_2QYd-37DwDWFpq23KoJOZWJBf7gzO0ok-OIRaseLayAIyT-84ne8dEOR5ozGtK3tGqo0lOW-fsmgdwnmMeP2Bgcyksk0J8c7GKQNP4NqSgNf6r4GI-1sAh8Rp5nPM1bq-AG9u0Sv1MQdgcw-wLA5ksx4h5WvJ2ngi4EQ2TJVacIF2ISsO6UhKrBbLRL_GdXFnEEi7yAHl5aZn4RG8tgpiXeRR0oiT67FK4DTgJaoUB3s7T6117EKkkMoejxcxppTePgS7PXJTXTUTYX_ZC_fqM1Lg3U3UE0Gc8ojbN8HluQkTkgZuJ7pbp9QoC86XJyjVOLKuoewtBWEq1IYfKvHfxs96t5Vca8I1frus8YgZuPov80qaz778zcRb3yxOBKTfy7dOZOgMaUDOzuBQhGKeKpjQyKVf6GIB_zkjBl_HRqIlhRFInDlOpxbqIz3phSNf2-zTUC_9n-XfsHNQvDILU9nsyHKU3xQG-WBxXFtV_Dq2uNPb64uGKU4XN9A-q1_D4sDjLCV5avu8p-6DQtAMAKLS0DulMSQBks08h8-bjN7F3OL5b-oV-3ASU86EPg6LsOkGVGZC-QSQ=w1315-h261-s-no?authuser=0"
+                        src="/Images/Logo.png"
                     />
                 </Typography >
                 <div className="hidden lg:block">
