@@ -3,8 +3,8 @@ import { SimpleFooter } from '../componets/Footer'
 
 function RefundPolicy() {
     return (
-        <div className='bg-b2 w-full'>
-            <div className='text-center mx-auto font-sans h-screen'>
+        <div className='bg-b2 w-full h-screen'>
+            <div className='text-center mx-auto font-sans'>
                 <h1 className='pt-20 text-6xl'>Refund Policy</h1>
                 <p className="w-1/2 pt-12 text-center mx-auto text-lg">
                     All sales are final. Cancellations will be dealt with on a situational basis.
@@ -17,8 +17,9 @@ function RefundPolicy() {
                 <p className="w-1/2 text-center mx-auto text-lg pt-6">
                     This policy is implemented to assist Thunder Corals in mitigating losses incurred due to factors beyond their control, such as carrier delays or unforeseen acts of nature.
                 </p>
+
             </div>
-            <div className="">
+            <div className="sticky top-[100vh]">
                 <SimpleFooter />
             </div>
         </div>
