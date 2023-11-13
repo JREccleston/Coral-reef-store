@@ -1,4 +1,5 @@
 import React from 'react'
+import { SimpleFooter } from '../componets/Footer'
 
 function TermsOfService() {
     return (
@@ -41,6 +42,9 @@ function TermsOfService() {
 
                 <h2 className='text-2xl'>11. Personal Information</h2>
                 <p className='w-1/2 pb-4 mx-auto'>Your submission of personal information through the store is governed by our Privacy Policy. To view our Privacy Policy.</p>
+            </div>
+            <div>
+                <SimpleFooter />
             </div>
         </div>
     )
