@@ -9,7 +9,7 @@ export function SimpleFooter() {
             <Typography color="blue-gray" className="font-normal text-sm font-kalam">
                 &copy; 2023 Thunder Corals
             </Typography>
-            <ul className="flex flex-wrap items-center gap-y-2 gap-x-3">
+            <ul className="flex flex-wrap items-center gap-y-2 gap-x-6">
                 <li className="font-kalam font-light text-sm transition-colors hover:text-orange-700 hover:underline ">
                     <Link to='/RefundPolicy'>Refund Policy</Link>
                 </li>
