@@ -10,50 +10,20 @@ export function SimpleFooter() {
                 &copy; 2023 Thunder Corals
             </Typography>
             <ul className="flex flex-wrap items-center gap-y-2 gap-x-3">
-                <li className="font-kalam font-normal text-sm transition-colors hover:text-orange-700 hover:underline ">
-
+                <li className="font-kalam font-light text-sm transition-colors hover:text-orange-700 hover:underline ">
                     <Link to='/RefundPolicy'>Refund Policy</Link>
-
                 </li>
-                <li>
-                    <Typography
-                        as="a"
-                        href="#"
-                        color="blue-gray"
-                        className="font-kalam font-normal text-sm transition-colors hover:text-orange-700 hover:underline"
-                    >
-                        Privacy Policy
-                    </Typography>
+                <li className="font-kalam font-light text-sm transition-colors hover:text-orange-700 hover:underline ">
+                    <Link to='/PrivacyPolicy'>Privacy Policy</Link>
                 </li>
-                <li>
-                    <Typography
-                        as="a"
-                        href="#"
-                        color="blue-gray"
-                        className="font-kalam font-normal text-sm transition-colors hover:text-orange-700 hover:underline"
-                    >
-                        Terms of Service
-                    </Typography>
+                <li className="font-kalam font-light text-sm transition-colors hover:text-orange-700 hover:underline ">
+                    <Link to='/TermsOfService'>Terms of Service</Link>
                 </li>
-                <li>
-                    <Typography
-                        as="a"
-                        href="#"
-                        color="blue-gray"
-                        className="font-kalam font-normal text-sm transition-colors hover:text-orange-700 hover:underline"
-                    >
-                        Shipping Policy
-                    </Typography>
+                <li className="font-kalam font-light text-sm transition-colors hover:text-orange-700 hover:underline ">
+                    <Link to='/ShippingPolicy'>Shipping Policy</Link>
                 </li>
-                <li>
-                    <Typography
-                        as="a"
-                        href="#"
-                        color="blue-gray"
-                        className="font-kalam font-normal text-sm transition-colors hover:text-orange-700 hover:underline"
-                    >
-                        Contact Information
-                    </Typography>
+                <li className="font-kalam font-light text-sm transition-colors hover:text-orange-700 hover:underline ">
+                    <Link to='/ContactInformation'>Contact Information</Link>
                 </li>
             </ul>
         </footer>
