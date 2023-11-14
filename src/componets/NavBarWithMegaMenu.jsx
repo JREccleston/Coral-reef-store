@@ -1,5 +1,6 @@
 import React from "react";
 import { UilShoppingCart } from '@iconscout/react-unicons'
+import { Link } from "react-router-dom";
 
 import {
     Navbar,
@@ -135,27 +136,22 @@ function NavListMenu() {
 function NavList() {
     return (
         <List className="mt-4 mb-4 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-            <Typography
-                as="a"
-                href="#"
-            >
-                <Button size="sm"
-                    variant="text"
-                    className="font-kalam relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black">
-                    Home
-                </Button>
-            </Typography>
+
+
+            <Button size="sm"
+                variant="text"
+                className="font-kalam relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black">
+                <Link to='/Home'>Home</Link>
+            </Button>
+
             <NavListMenu />
-            <Typography
-                as="a"
-                href="#"
-            >
-                <Button size="sm"
-                    variant="text"
-                    className="font-kalam relative inline-flex items-center justify-center mt-2 mr-28  overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black">
-                    About
-                </Button>
-            </Typography>
+
+            <Button size="sm"
+                variant="text"
+                className="font-kalam relative inline-flex items-center justify-center mt-2 mr-28  overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black">
+                <Link to='/About'>About</Link>
+            </Button>
+
         </List>
     );
 }
