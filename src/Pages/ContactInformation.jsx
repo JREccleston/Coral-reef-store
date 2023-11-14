@@ -6,7 +6,7 @@ function ContactInformation() {
     return (
         <div className='bg-b2 w-full h-full' >
             <div className='flex flex-row items-center justify-center'>
-                <div className='pb-40'>
+                <div>
                     <NavbarWithMegaMenu />
                 </div>
                 <div className='flex flex-col mt-12 gap-y-10 pb-0 pl-20 '>
