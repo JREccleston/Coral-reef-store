@@ -98,27 +98,25 @@ function NavListMenu() {
                 allowHover={true}
             >
                 <MenuHandler>
-                    <Typography as="div" variant="small" className="font-medium ">
-                        <Button
-                            size="sm"
-                            variant="text"
-                            className="font-kalam relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black"
-                            selected={isMenuOpen || isMobileMenuOpen}
-                            onClick={() => setIsMobileMenuOpen((cur) => !cur)}
-                        >
-                            Shop Corals
-                            <ChevronDownIcon
-                                strokeWidth={2.5}
-                                className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
-                                    }`}
-                            />
-                            <ChevronDownIcon
-                                strokeWidth={2.5}
-                                className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
-                                    }`}
-                            />
-                        </Button>
-                    </Typography>
+                    <Button
+                        size="sm"
+                        variant="text"
+                        className="font-sans relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden font-normal text-lg text-black rounded-lg hover:bg-orange-700 hover:text-black"
+                        selected={isMenuOpen || isMobileMenuOpen}
+                        onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+                    >
+                        <Link>Shop Corals</Link>
+                        <ChevronDownIcon
+                            strokeWidth={2.5}
+                            className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
+                                }`}
+                        />
+                        <ChevronDownIcon
+                            strokeWidth={2.5}
+                            className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
+                                }`}
+                        />
+                    </Button>
                 </MenuHandler>
                 <MenuList className="hidden max-w-screen-xl rounded-xl lg:block bg-sky100">
                     <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
@@ -140,15 +138,15 @@ function NavList() {
 
             <Button size="sm"
                 variant="text"
-                className="font-kalam relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black">
-                <Link to='/Home'>Home</Link>
+                className="font-sans relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden text-lg font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
+                <Link to='/Home' className="">Home</Link>
             </Button>
 
             <NavListMenu />
 
             <Button size="sm"
                 variant="text"
-                className="font-kalam relative inline-flex items-center justify-center mt-2 mr-28  overflow-hidden text-lg font-bold text-black rounded-lg hover:bg-orange-700 hover:text-black">
+                className="font-sans relative inline-flex items-center justify-center mt-2 mr-28  overflow-hidden text-lg font-normal  text-black rounded-lg hover:bg-orange-700 hover:text-black">
                 <Link to='/About'>About</Link>
             </Button>
 
