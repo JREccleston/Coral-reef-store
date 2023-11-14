@@ -5,11 +5,11 @@ import { SimpleFooter } from '../componets/Footer'
 function ShippingPolicy() {
     return (
         <div className='bg-b2 w-full h-screen'>
-            <div>
+            <div className='pb-40'>
                 <NavbarWithMegaMenu />
             </div>
-            <div className='text-center mx-auto font-sans pt-20 w-1/2'>
-                <h1 className='text-6xl  pt-20 pb-10'>
+            <div className='text-center mx-auto font-sans w-1/2'>
+                <h1 className='text-6xl pb-10'>
                     Shipping
                 </h1>
                 <p className='text-lg pb-4'>
