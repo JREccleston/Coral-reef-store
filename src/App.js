@@ -12,10 +12,10 @@ import { lpsDesc, spsDesc, sftDesc, acroPic, hammerPic, zoaPic, lpsCategory, sps
 function App() {
   return (
     <div className=" bg-b2  w-full h-full">
-      <div className='flex flex-row items-center justify-center'>
+      <div className='pb-40'>
         <NavbarWithMegaMenu />
       </div>
-      <div className="h-screen mt-32">
+      <div className="h-screen">
         <HomePage />
         <div className='flex flex-row items-center justify-center mt-20 gap-10'>
           <HomePageCard species={lpsDesc} coralType={"LPS"} coralImg={hammerPic} coralCategory={lpsCategory} />
