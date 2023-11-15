@@ -134,22 +134,17 @@ function NavListMenu() {
 function NavList() {
     return (
         <List className="mt-4 mb-4 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-
-
             <Button size="sm"
                 variant="text"
                 className="font-sans relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden text-lg font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
                 <Link to='/Home' className="">Home</Link>
             </Button>
-
             <NavListMenu />
-
             <Button size="sm"
                 variant="text"
                 className="font-sans relative inline-flex items-center justify-center mt-2 mr-28  overflow-hidden text-lg font-normal  text-black rounded-lg hover:bg-orange-700 hover:text-black">
                 <Link to='/About'>About</Link>
             </Button>
-
         </List>
     );
 }

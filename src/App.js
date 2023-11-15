@@ -15,7 +15,7 @@ function App() {
       <div className='pb-40'>
         <NavbarWithMegaMenu />
       </div>
-      <div className="h-screen">
+      <div>
         <HomePage />
         <div className='flex flex-row items-center justify-center mt-20 gap-10'>
           <HomePageCard species={lpsDesc} coralType={"LPS"} coralImg={hammerPic} coralCategory={lpsCategory} />

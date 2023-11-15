@@ -52,7 +52,7 @@ function ContactInformation() {
                         </div>
                         <div class="sm:col-span-2">
                             <label for="message" className="block mb-2 text-xl text-black ">Your Message</label>
-                            <textarea id="message" rows="6" class="font-sans block p-2.5 w-full text-black bg-gray-100 rounded-lg shadow-lg border border-gray-300" placeholder="Leave a comment..."></textarea>
+                            <textarea id="message" rows="4" class="font-sans block p-2.5 w-full text-black bg-gray-100 rounded-lg shadow-lg border border-gray-300" placeholder="Leave a comment..."></textarea>
                         </div>
                         <button type="submit" class="py-3 px-5 text-base text-center text-black rounded-lg bg-b1 sm:w-fit hover:bg-orange-700">Send Message</button>
                     </form>

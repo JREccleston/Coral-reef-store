@@ -1,5 +1,4 @@
 import React from 'react'
-import { UilShoppingCart } from '@iconscout/react-unicons'
 export function HomePage() {
     return (
         <div><div>
