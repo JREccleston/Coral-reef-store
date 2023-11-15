@@ -29,7 +29,7 @@ function ContactInformation() {
                             Location:
                         </h1>
                         <p className='text-lg'>
-                            Rogers, AR 72758
+                            Rogers, Arkansas 72758
                         </p>
                         <p className='text-lg'>
                             United States
