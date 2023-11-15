@@ -6,7 +6,7 @@ import { SimpleFooter } from '../componets/Footer'
 function SftPage() {
     return (
         <div className='bg-b2 w-full h-screen'>
-            <div>
+            <div className='pb-40'>
                 <NavbarWithMegaMenu />
             </div>
             <div className="sticky top-[100vh]">
