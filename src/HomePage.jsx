@@ -18,11 +18,11 @@ function HomePage() {
       <div>
         <HomePageText />
         <div className='flex flex-row items-center justify-center mt-20 gap-10'>
-          <HomePageCard species={lpsDesc} coralType={"LPS"} coralImg={hammerPic} coralCategory={lpsCategory} />
+          <HomePageCard species={lpsDesc} coralType={"LPS"} coralImg={hammerPic} coralCategory={lpsCategory} productPage={"/LpsPage"} />
 
-          <HomePageCard species={spsDesc} coralType={"SPS"} coralImg={acroPic} coralCategory={spsCategory} />
+          <HomePageCard species={spsDesc} coralType={"SPS"} coralImg={acroPic} coralCategory={spsCategory} productPage={"/SpsPage"} />
 
-          <HomePageCard species={sftDesc} coralType={"Softies"} coralImg={zoaPic} coralCategory={sftCategory} />
+          <HomePageCard species={sftDesc} coralType={"Softies"} coralImg={zoaPic} coralCategory={sftCategory} productPage={"/SftPage"} />
         </div>
       </div>
 
