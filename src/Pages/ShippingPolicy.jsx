@@ -8,20 +8,20 @@ function ShippingPolicy() {
             <div className='pb-40'>
                 <NavbarWithMegaMenu />
             </div>
-            <div className='text-center mx-auto font-sans w-1/2'>
-                <h1 className='text-6xl pb-10'>
+            <div className='text-center mx-auto w-1/2'>
+                <h1 className='text-5xl pb-10'>
                     Shipping
                 </h1>
-                <p className='text-lg pb-4'>
+                <p className='text-xl pb-4'>
                     All orders over $299 will receive free shipping.
                 </p>
-                <p className='text-lg'>
+                <p className='text-xl'>
                     For orders under $299, a $50 shipping fee will be added to your order.
                 </p>
-                <p className='text-lg pb-4'>
+                <p className='text-xl pb-4'>
                     Alive arrival is guaranteed. In the case of a dead on arrival, an email with pictures must be sent within 2 hours of delivery for a credit.
                 </p>
-                <p className='text-lg'>
+                <p className='text-xl'>
                     On rare occasions there may me a shipping mishap by the carrier that may cause delays with the delivery of your package.
                     This is completely out of our control and we are not responsible for any DOA’s caused by the delay.
 

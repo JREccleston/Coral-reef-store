@@ -101,7 +101,7 @@ function NavListMenu() {
                     <Button
                         size="sm"
                         variant="text"
-                        className="font-sans relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden font-normal text-lg text-black rounded-lg hover:bg-orange-700 hover:text-black"
+                        className="font-kalam relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden font-normal text-xl text-black rounded-lg hover:bg-orange-700 hover:text-black"
                         selected={isMenuOpen || isMobileMenuOpen}
                         onClick={() => setIsMobileMenuOpen((cur) => !cur)}
                     >
@@ -136,13 +136,13 @@ function NavList() {
         <List className="mt-4 mb-4 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
             <Button size="sm"
                 variant="text"
-                className="font-sans relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden text-lg font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
+                className="font-kalam relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden text-xl font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
                 <Link to='/Home' className="">Home</Link>
             </Button>
             <NavListMenu />
             <Button size="sm"
                 variant="text"
-                className="font-sans relative inline-flex items-center justify-center mt-2 mr-28  overflow-hidden text-lg font-normal  text-black rounded-lg hover:bg-orange-700 hover:text-black">
+                className="font-kalam relative inline-flex items-center justify-center mt-2 mr-28  overflow-hidden text-xl font-normal  text-black rounded-lg hover:bg-orange-700 hover:text-black">
                 <Link to='/About'>About</Link>
             </Button>
         </List>
@@ -168,16 +168,11 @@ export function NavbarWithMegaMenu() {
 
 
             <div className="flex items-center justify-between ">
-                < Typography
-                    as="a"
-                    href="#"
-                    className="mr-0 cursor-pointer pr-0 lg:ml-2 text-3xl font-kalam"
-                >
-                    <img
-                        className="w-72"
-                        src="/Images/Logo.png"
-                    />
-                </Typography >
+                <Link to='/Home'> <img
+                    className="w-72"
+                    src="/Images/Logo.png"
+                />
+                </Link>
                 <div className="hidden lg:block">
                     <NavList />
                 </div>
