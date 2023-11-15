@@ -1,5 +1,5 @@
 import React from 'react'
-export function HomePage() {
+export function HomePageText() {
     return (
         <div><div>
             <p className="text-6xl text-black items-center justify-center flex flex-row pb-8">

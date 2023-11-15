@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import RefundPolicy from './Pages/RefundPolicy';
 import {
   createBrowserRouter,
@@ -14,12 +13,13 @@ import LpsPage from './Pages/LpsPage';
 import SpsPage from './Pages/SpsPage';
 import SftPage from './Pages/SftPage';
 import MotherColPage from './Pages/MotherColPage';
+import HomePage from './HomePage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <HomePage />,
   },
   {
     path: "RefundPolicy",
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
   },
   {
     path: "Home",
-    element: <App />,
+    element: <HomePage />,
   },
   {
     path: "About",
