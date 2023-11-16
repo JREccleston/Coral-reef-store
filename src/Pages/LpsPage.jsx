@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavbarWithMegaMenu } from '../componets/NavBarWithMegaMenu'
 import { SimpleFooter } from '../componets/Footer'
-
+import { products } from '../componets/Products'
 function LpsPage() {
     return (
         <div className='bg-b2 w-full h-full'>
@@ -19,7 +19,13 @@ function LpsPage() {
                     They are healthy and ready for your tank!
                 </p>
             </div>
-            <div className='flex flex-row flex-wrap justify-center items-center gap-x-20 product-grid pb-20'>
+            <div>
+
+            </div>
+            <div className='flex flex-row flex-wrap items-center justify-center product-grid gap-x-24 gap-y-20 pb-20'>
+                <script>
+
+                </script>
             </div>
             <div className="sticky top-[100vh]">
                 <SimpleFooter />
