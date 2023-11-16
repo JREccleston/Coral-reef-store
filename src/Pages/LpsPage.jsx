@@ -1,9 +1,7 @@
 import React from 'react'
 import { NavbarWithMegaMenu } from '../componets/NavBarWithMegaMenu'
 import { SimpleFooter } from '../componets/Footer'
-import { ProductCard } from '../componets/productCard'
-import { products } from '../componets/Products'
-import { NewCard } from '../componets/Products'
+
 function LpsPage() {
     return (
         <div className='bg-b2 w-full h-full'>

@@ -1,12 +1,3 @@
-import { ProductCard } from "./productCard";
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-    Button,
-} from "@material-tailwind/react";
 
 export const products = [
     {
@@ -37,7 +28,7 @@ let card = ""
 products.forEach((product) => {
     card += `
     <div class="relative flex flex-col text-black bg-sky100 shadow-md w-80 rounded-xl bg-clip-border">
-    <div class="relative mx-4 mt-4 overflow-hidden text-black bg-sky100 h-72 rounded-xl bg-clip-border">
+    <div class="relative mx-4 mt-4 overflow-hidden text-black bg-sky100 h-60 rounded-xl bg-clip-border">
       <img
         src="${product.image}"
         class="object-cover w-full h-full"
