@@ -2,15 +2,15 @@ import React from 'react'
 import { NavbarWithMegaMenu } from '../componets/NavBarWithMegaMenu'
 import { SimpleFooter } from '../componets/Footer'
 import { ProductCard } from '../componets/productCard'
-
-
+import { products } from '../componets/Products'
+import { NewCard } from '../componets/Products'
 function LpsPage() {
     return (
         <div className='bg-b2 w-full h-full'>
             <div className='pb-40'>
                 <NavbarWithMegaMenu />
             </div>
-            <div className='text-center text-5xl pb-28 mt-20 w-1/2 mx-auto'>
+            <div className='text-center text-5xl pb-24 mt-10 w-1/2 mx-auto'>
                 <h1 className='pb-3'>
                     LPS Corals
                 </h1>
@@ -21,10 +21,7 @@ function LpsPage() {
                     They are healthy and ready for your tank!
                 </p>
             </div>
-            <div className='flex flex-row justify-center items-center gap-x-20'>
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
+            <div className='flex flex-row flex-wrap justify-center items-center gap-x-20 product-grid pb-20'>
             </div>
             <div className="sticky top-[100vh]">
                 <SimpleFooter />
