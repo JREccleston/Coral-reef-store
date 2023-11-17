@@ -1,4 +1,4 @@
-export const products = [
+export const lpsProducts = [
   {
     id: "1",
     name: "Dragon Soul Torch",
@@ -33,7 +33,7 @@ export const products = [
 
 ]
 export let ProductContainer = ""
-products.forEach((product) => {
+lpsProducts.forEach((product) => {
   ProductContainer += `
     <div class="relative flex flex-col text-black bg-b1 shadow-md w-72 rounded-xl bg-clip-border">
     <div class="relative m-1 overflow-hidden text-black bg-sky100 h-60 rounded-xl bg-clip-border">
