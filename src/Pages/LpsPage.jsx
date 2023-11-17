@@ -2,6 +2,7 @@ import React from 'react'
 import { NavbarWithMegaMenu } from '../componets/NavBarWithMegaMenu'
 import { SimpleFooter } from '../componets/Footer'
 import { products } from '../componets/Products'
+import { ProductContainer } from '../componets/Products'
 function LpsPage() {
     return (
         <div className='bg-b2 w-full h-full'>
@@ -22,10 +23,8 @@ function LpsPage() {
             <div>
 
             </div>
-            <div className='flex flex-row flex-wrap items-center justify-center product-grid gap-x-24 gap-y-20 pb-20'>
-                <script>
+            <div id='productCard' className='flex flex-row flex-wrap items-center justify-center product-grid gap-x-24 gap-y-20 pb-20' dangerouslySetInnerHTML={{ __html: ProductContainer }}>
 
-                </script>
             </div>
             <div className="sticky top-[100vh]">
                 <SimpleFooter />

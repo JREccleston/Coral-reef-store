@@ -23,12 +23,18 @@ export const products = [
     price: "$300.00",
     image: "/Images/Moses.jpg"
   }
+  ,
+  {
+    id: "5",
+    name: "24K Gold Torch",
+    price: "$300.00",
+    image: "/Images/Moses.jpg"
+  }
 
 ]
-let card = ""
-
+export let ProductContainer = ""
 products.forEach((product) => {
-  card += `
+  ProductContainer += `
     <div class="relative flex flex-col text-black bg-b1 shadow-md w-72 rounded-xl bg-clip-border">
     <div class="relative m-1 overflow-hidden text-black bg-sky100 h-60 rounded-xl bg-clip-border">
       <img
@@ -55,10 +61,12 @@ products.forEach((product) => {
       </button>
     </div> 
   </div>`
+
 })
 
 
 
-document.querySelector('.product-grid').innerHTML = card;
+
+
 
 
