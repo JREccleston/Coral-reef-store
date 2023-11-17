@@ -32,9 +32,9 @@ export const lpsProducts = [
   }
 
 ]
-export let ProductContainer = ""
+export let lpsProductContainer = ""
 lpsProducts.forEach((product) => {
-  ProductContainer += `
+  lpsProductContainer += `
     <div class="relative flex flex-col text-black bg-b1 shadow-md w-72 rounded-xl bg-clip-border">
     <div class="relative m-1 overflow-hidden text-black bg-sky100 h-60 rounded-xl bg-clip-border">
       <img

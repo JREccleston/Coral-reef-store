@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavbarWithMegaMenu } from '../componets/NavBarWithMegaMenu'
 import { SimpleFooter } from '../componets/Footer'
-import { lpsProducts } from '../componets/Products'
-import { ProductContainer } from '../componets/Products'
+import { lpsProducts } from '../componets/LpsProducts'
+import { lpsProductContainer } from '../componets/LpsProducts'
 function LpsPage() {
     return (
         <div className='bg-b2 w-full h-full'>
@@ -17,13 +17,13 @@ function LpsPage() {
                     I Mainly only keep Gonipora and Euphyllia. All corals are WYSIWYG and are hand picked straight from my display tank.
                 </p>
                 <p className='text-xl'>
-                    They are healthy and ready for your tank!
+                    Frags are healthy and ready for your tank!
                 </p>
             </div>
             <div>
 
             </div>
-            <div id='productCard' className='flex flex-row flex-wrap items-center justify-center product-grid gap-x-24 gap-y-20 pb-20' dangerouslySetInnerHTML={{ __html: ProductContainer }}>
+            <div className='flex flex-row flex-wrap items-center justify-center gap-x-24 gap-y-20 pb-20' dangerouslySetInnerHTML={{ __html: lpsProductContainer }}>
 
             </div>
             <div className="sticky top-[100vh]">
