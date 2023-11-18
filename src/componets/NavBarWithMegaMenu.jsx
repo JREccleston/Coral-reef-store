@@ -20,38 +20,24 @@ import {
     Bars3Icon,
     XMarkIcon,
 } from "@heroicons/react/24/outline";
-import {
-    Bars4Icon,
-    SquaresPlusIcon,
-    SunIcon,
-    UserGroupIcon,
-} from "@heroicons/react/24/solid";
+
 
 
 const navListMenuItems = [
     {
         title: "LPS Corals",
         description: "Large Polyp Stony corals",
-        icon: SquaresPlusIcon,
         href: "/LpsPage"
     },
     {
         title: "SPS Corals",
         description: "Small Polyp Stony corals",
-        icon: UserGroupIcon,
         href: "/SpsPage"
     },
     {
         title: "Softies",
         description: "Soft corals",
-        icon: Bars4Icon,
         href: "/SftPage"
-    },
-    {
-        title: "Signature Colonies",
-        description: "A collection of my favorite mother colonies",
-        icon: SunIcon,
-        href: "/MotherColPage"
     },
 ];
 
@@ -59,18 +45,11 @@ function NavListMenu() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const renderItems = navListMenuItems.map(
-        ({ icon, title, description, href }, key) => (
+        ({ title, description, href }, key) => (
 
             <a href={href} key={key}>
 
                 <MenuItem className="flex items-center gap-3 rounded-lg hover:bg-orange-700">
-                    <div className="flex items-center justify-center rounded-lg !bg-cyan-500 p-2 ">
-                        {" "}
-                        {React.createElement(icon, {
-                            strokeWidth: 2,
-                            className: "h-6 text-gray-900 w-6",
-                        })}
-                    </div>
                     <div className=' text-blue-700 font-kalam'>
                         <Typography
                             variant="h6"

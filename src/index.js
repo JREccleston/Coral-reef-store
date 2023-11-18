@@ -12,7 +12,6 @@ import About from './Pages/About';
 import LpsPage from './Pages/LpsPage';
 import SpsPage from './Pages/SpsPage';
 import SftPage from './Pages/SftPage';
-import MotherColPage from './Pages/MotherColPage';
 import HomePage from './HomePage';
 
 
@@ -53,10 +52,7 @@ const router = createBrowserRouter([
     path: "SftPage",
     element: <SftPage />,
   },
-  {
-    path: "MotherColPage",
-    element: <MotherColPage />,
-  },
+
 ]);
 
 
