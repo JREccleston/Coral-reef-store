@@ -13,7 +13,8 @@ import LpsPage from './Pages/LpsPage';
 import SpsPage from './Pages/SpsPage';
 import SftPage from './Pages/SftPage';
 import HomePage from './HomePage';
-
+import LoginPage from './Pages/Login';
+import CheckoutPage from './Pages/CheckoutPage';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,14 @@ const router = createBrowserRouter([
   {
     path: "SftPage",
     element: <SftPage />,
+  },
+  {
+    path: "LoginPage",
+    element: <LoginPage />,
+  },
+  {
+    path: "CheckoutPage",
+    element: <CheckoutPage />,
   },
 
 ]);

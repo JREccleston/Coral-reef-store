@@ -1,11 +1,12 @@
 import React from 'react'
 export function HomePageText() {
     return (
-        <div><div>
-            <p className="text-6xl text-black items-center justify-center flex flex-row pb-8">
-                Thunder Corals
-            </p>
-        </div>
+        <div>
+            <div>
+                <p className="text-6xl text-black items-center justify-center flex flex-row pb-8">
+                    Thunder Corals
+                </p>
+            </div>
             <p className="text-4xl text-black items-center justify-center flex flex-row pb-4">
                 High Quality
             </p>

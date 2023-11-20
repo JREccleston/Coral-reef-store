@@ -164,13 +164,13 @@ export function NavbarWithMegaMenu() {
                         size="sm"
                         variant="text"
                         className="font-kalam relative inline-flex items-center justify-center mt-2 mr-0 overflow-hidden text-lg font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
-                        Login
+                        <Link to='/LoginPage' className="">Log In</Link>
                     </Button>
                     <Button
                         size="sm"
                         variant="text"
                         className="relative inline-flex items-center justify-center mt-2 mr-2 px-1 overflow-hidden rounded-lg hover:bg-orange-700">
-                        <UilShoppingCart size={27} color="black" />
+                        <Link to='/CheckoutPage' className=""><UilShoppingCart size={27} color="black" /></Link>
                     </Button>
                 </div>
                 <IconButton
@@ -189,10 +189,10 @@ export function NavbarWithMegaMenu() {
                 <NavList />
                 <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
                     <Button ripple={true} variant="outlined" size="sm" className="text-blue-700 border-orange-400 text-lg font-kalam" fullWidth>
-                        Log In
+                        <Link to='/LoginPage' className="">Log In</Link>
                     </Button>
                     <Button size="sm" className="flex flex-row items-center justify-center bg-orange-400 text-lg font-kalam" fullWidth>
-                        <UilShoppingCart size={27} color="black" />
+                        <Link to='/CheckoutPage' className=""><UilShoppingCart size={27} color="black" /></Link>
                     </Button>
                 </div>
             </Collapse>
