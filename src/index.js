@@ -14,7 +14,7 @@ import SpsPage from './Pages/SpsPage';
 import SftPage from './Pages/SftPage';
 import HomePage from './HomePage';
 import LoginPage from './Pages/Login';
-import CheckoutPage from './Pages/CheckoutPage';
+import CartPage from './Pages/CartPage';
 
 const router = createBrowserRouter([
   {
@@ -58,8 +58,8 @@ const router = createBrowserRouter([
     element: <LoginPage />,
   },
   {
-    path: "CheckoutPage",
-    element: <CheckoutPage />,
+    path: "CartPage",
+    element: <CartPage />,
   },
 
 ]);

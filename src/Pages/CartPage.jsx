@@ -2,7 +2,7 @@ import React from 'react'
 import { SimpleFooter } from '../componets/Footer'
 import { NavbarWithMegaMenu } from '../componets/NavBarWithMegaMenu'
 
-function CheckoutPage() {
+function CartPage() {
     return (
         <div className='bg-b2 w-full h-screen'>
             <div className='pb-40'>
@@ -15,4 +15,4 @@ function CheckoutPage() {
     )
 }
 
-export default CheckoutPage
+export default CartPage

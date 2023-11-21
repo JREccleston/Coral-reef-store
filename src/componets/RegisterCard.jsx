@@ -26,7 +26,7 @@ export function RegisterCard(props) {
 
         <Card className="w-96 text-center mx-auto mt-20 bg-sky100 font-kalam">
             <CardHeader
-                className="mb-4 grid h-24"
+                className="mb-4 grid h-20"
             >
                 <Typography variant="h2" color="white" className="bg-orange-700 h-full w-full text-center items-center justify-center flex text-black font-kalam">
                     Register
