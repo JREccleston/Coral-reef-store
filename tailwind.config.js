@@ -6,7 +6,8 @@ module.exports = withMT({
   theme: {
     extend: {
       screens: {
-        'xs': '380px'
+        'xs': { 'min': '375px', 'max': '600px' },
+        'ms': { 'min': '601px', 'max': '820px' }
       },
     },
     fontFamily: {

@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 export function HomePageCard({ species, coralType, coralImg, coralCategory, productPage }) {
     return (
-        <Card className="mt-8 w-96 bg-sky100 pr-0">
+        <Card className="lg:mt-8 xs:mt-10 lg:w-96 xs:w-80 ms:w-2/3 ms:mt-10 bg-sky100 lg:pr-0">
             <CardHeader className="relative h-56 flex flex-row items-center justify-center">
                 <img
                     className="rounded-3xl"
