@@ -4,6 +4,11 @@ module.exports = withMT({
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    extend: {
+      screens: {
+        'xs': '380px'
+      },
+    },
     fontFamily: {
       'kalam': ['Kalam', 'cursive'],
       'Nuecha': ['Neucha', 'cursive']

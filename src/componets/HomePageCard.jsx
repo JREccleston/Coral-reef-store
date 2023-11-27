@@ -17,7 +17,7 @@ export function HomePageCard({ species, coralType, coralImg, coralCategory, prod
                 <img
                     className="rounded-3xl"
                     src={coralImg}
-                    alt="Coral-image"
+                    alt="Coral"
                 />
             </CardHeader>
             <CardBody className='bg-sky100'>

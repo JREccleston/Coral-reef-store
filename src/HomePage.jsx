@@ -12,12 +12,12 @@ import { lpsDesc, spsDesc, sftDesc, acroPic, hammerPic, zoaPic, lpsCategory, sps
 function HomePage() {
   return (
     <div className=" bg-b2  w-full h-full">
-      <div className='pb-40'>
+      <div className='lg:pb-40 xs:pb-28'>
         <NavbarWithMegaMenu />
       </div>
       <div>
         <HomePageText />
-        <div className='flex flex-row items-center justify-center mt-20 gap-10'>
+        <div className='lg:flex lg:flex-row lg:items-center lg:justify-center lg:mt-20 lg:gap-10 xs:items-center xs:justify-center xs:flex xs:flex-col xs:gap-10'>
           <HomePageCard species={lpsDesc} coralType={"LPS"} coralImg={hammerPic} coralCategory={lpsCategory} productPage={"/LpsPage"} />
 
           <HomePageCard species={spsDesc} coralType={"SPS"} coralImg={acroPic} coralCategory={spsCategory} productPage={"/SpsPage"} />
@@ -26,7 +26,7 @@ function HomePage() {
         </div>
       </div>
 
-      <div className="mt-20 pb-0 sticky top-[100vh]">
+      <div className="lg:mt-20 lg:pb-0 sticky top-[100vh]">
         <SimpleFooter />
       </div>
 

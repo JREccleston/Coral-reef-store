@@ -9,7 +9,6 @@ import {
     Button,
     IconButton,
     List,
-    ListItem,
     Menu,
     MenuHandler,
     MenuList,
@@ -147,13 +146,12 @@ export function NavbarWithMegaMenu() {
         <Navbar
             variant="filled"
             fullWidth={true}
-            className="mx-auto w-full px-28 pb-0 fixed top-0 z-50 bg-b1 border-transparent">
-
-
-            <div className="flex items-center justify-between ">
+            className="mx-auto lg:w-full xs:w-full xs:flex xs:flex-row xs:justify-center xs:items-center lg:px-28 pb-0 fixed top-0 z-50 bg-b1 border-transparent xs:h-auto">
+            <div className="lg:flex lg:items-center lg:justify-between ">
                 <Link to='/Home'> <img
-                    className="w-72"
+                    className="lg:w-72 xs:w-fit xs:pl-6"
                     src="/Images/Logo.png"
+                    alt="Logo"
                 />
                 </Link>
                 <div className="hidden lg:block">
@@ -173,9 +171,11 @@ export function NavbarWithMegaMenu() {
                         <Link to='/CartPage' className=""><UilShoppingCart size={27} color="black" /></Link>
                     </Button>
                 </div>
+            </div >
+            <div>
                 <IconButton
                     variant="text"
-                    className="lg:hidden text-blue-700"
+                    className="lg:hidden text-blue-700 xs:ml-0 xs:p-0 "
                     onClick={() => setOpenNav(!openNav)}
                 >
                     {openNav ? (
@@ -184,7 +184,9 @@ export function NavbarWithMegaMenu() {
                         <Bars3Icon className="h-6 w-6" strokeWidth={2} />
                     )}
                 </IconButton>
-            </div >
+            </div>
+
+
             <Collapse open={openNav}>
                 <NavList />
                 <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">

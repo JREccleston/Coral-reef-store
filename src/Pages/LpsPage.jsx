@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavbarWithMegaMenu } from '../componets/NavBarWithMegaMenu'
 import { SimpleFooter } from '../componets/Footer'
-import { lpsProducts } from '../componets/LpsProducts'
+
 import { lpsProductContainer } from '../componets/LpsProducts'
 function LpsPage() {
     return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavbarWithMegaMenu } from '../componets/NavBarWithMegaMenu'
 import { SimpleFooter } from '../componets/Footer'
-import { spsProducts } from '../componets/SpsProducts'
+
 import { spsProductContainer } from '../componets/SpsProducts'
 
 function SpsPage() {

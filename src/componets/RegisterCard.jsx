@@ -2,11 +2,8 @@ import {
     Card,
     CardHeader,
     CardBody,
-    CardFooter,
     Typography,
-    Input,
-    Checkbox,
-    Button,
+    Input
 } from "@material-tailwind/react";
 import { useState } from "react";
 import React from "react";

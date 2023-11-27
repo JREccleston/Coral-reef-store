@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavbarWithMegaMenu } from '../componets/NavBarWithMegaMenu'
 import { SimpleFooter } from '../componets/Footer'
-import { sftProducts } from '../componets/SftProducts'
+
 import { sftProductContainer } from '../componets/SftProducts'
 
 function SftPage() {
