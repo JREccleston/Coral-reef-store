@@ -4,7 +4,7 @@ import { SimpleFooter } from '../componets/Footer'
 
 function About() {
     return (
-        <div className='bg-b2 w-full h-screen'>
+        <div className='bg-b2 w-full h-screen xs:h-full'>
             <div className='pb-40'>
                 <NavbarWithMegaMenu />
             </div>

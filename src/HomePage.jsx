@@ -16,10 +16,10 @@ function HomePage() {
         <NavbarWithMegaMenu />
       </div>
       <div>
-        <div className='ms:mt-20 bs:mt-20'>
+        <div className='ms:mt-20 bs:mt-20 xs:mt-20'>
           <HomePageText />
         </div>
-        <div className='lg:flex lg:flex-row lg:items-center lg:justify-center lg:mt-20 lg:gap-10  flex flex-col items-center justify-center mt-20 ms:gap-10 bs:gap-10 xs:items-center xs:justify-center xs:flex xs:flex-col xs:gap-10'>
+        <div className='lg:flex lg:flex-row lg:items-center lg:justify-center lg:mt-20 lg:gap-10  flex flex-col items-center justify-center ms:gap-10 bs:gap-10 xs:items-center xs:justify-center xs:flex xs:flex-col xs:gap-10'>
           <HomePageCard species={lpsDesc} coralType={"LPS"} coralImg={hammerPic} coralCategory={lpsCategory} productPage={"/LpsPage"} />
 
           < HomePageCard species={spsDesc} coralType={"SPS"} coralImg={acroPic} coralCategory={spsCategory} productPage={"/SpsPage"} />

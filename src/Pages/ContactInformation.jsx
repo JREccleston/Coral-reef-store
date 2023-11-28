@@ -4,7 +4,7 @@ import { SimpleFooter } from '../componets/Footer'
 
 function ContactInformation() {
     return (
-        <div className='bg-b2 w-full h-screen' >
+        <div className='bg-b2 w-full h-screen xs:h-full' >
             <div className='flex flex-row items-center justify-center'>
                 <div>
                     <NavbarWithMegaMenu />
