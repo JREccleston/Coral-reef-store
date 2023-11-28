@@ -83,7 +83,7 @@ function NavListMenu() {
                     <Button
                         size="sm"
                         variant="text"
-                        className="font-kalam relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden font-normal text-xl text-black rounded-lg hover:bg-orange-700 hover:text-black"
+                        className="font-kalam lg:relative lg:inline-flex lg:items-center lg:justify-center lg:mt-2 lg:mr-2 overflow-hidden font-normal text-xl text-black rounded-lg hover:bg-orange-700 hover:text-black"
                         selected={isMenuOpen || isMobileMenuOpen}
                         onClick={() => setIsMobileMenuOpen((cur) => !cur)}
                     >
@@ -115,16 +115,16 @@ function NavListMenu() {
 
 function NavList() {
     return (
-        <List className="mt-4 mb-4 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+        <List className="lg:mt-4 mb-4 p-0 lg:mb-0 lg:flex-row lg:p-1  ms:ml-0">
             <Button size="sm"
                 variant="text"
-                className="font-kalam relative inline-flex items-center justify-center mt-2 mr-2 overflow-hidden text-xl font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
+                className="font-kalam relative lg:inline-flex lg:items-center lg:justify-center lg:mt-2 lg:mr-2 overflow-hidden text-xl font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
                 <Link to='/Home' className="">Home</Link>
             </Button>
             <NavListMenu />
             <Button size="sm"
                 variant="text"
-                className="font-kalam relative inline-flex items-center justify-center mt-2 mr-28  overflow-hidden text-xl font-normal  text-black rounded-lg hover:bg-orange-700 hover:text-black">
+                className="font-kalam relative lg:inline-flex lg:items-center lg:justify-center lg:mt-2 lg:mr-28 overflow-hidden text-xl font-normal  text-black rounded-lg hover:bg-orange-700 hover:text-black">
                 <Link to='/About'>About</Link>
             </Button>
         </List>
@@ -146,10 +146,10 @@ export function NavbarWithMegaMenu() {
         <Navbar
             variant="filled"
             fullWidth={true}
-            className="mx-auto lg:w-full xs:w-full ms-w-full ms:flex ms:flex-row ms:justify-center ms:items-center xs:flex xs:flex-row xs:justify-center xs:items-center lg:px-28 pb-0 fixed top-0 z-50 bg-b1 border-transparent">
+            className="mx-auto lg:w-full xs:w-full ms:w-full lg:px-28 pb-0 fixed top-0 z-50 bg-b1 border-transparent ">
             <div className="lg:flex lg:items-center lg:justify-between ">
                 <Link to='/Home'> <img
-                    className="lg:w-72 xs:w-fit xs:pl-6 ms:w-8/12 ms:pl-10 "
+                    className="lg:w-72 xs:w-fit xs:pl-6 ms:w-6/12 ms:ml-10 bs:ml-10 bs:w-6/12"
                     src="/Images/Logo.png"
                     alt="Logo"
                 />
@@ -175,7 +175,7 @@ export function NavbarWithMegaMenu() {
             <div>
                 <IconButton
                     variant="text"
-                    className="lg:hidden text-blue-700 xs:ml-0 xs:p-0 ms:left-16 "
+                    className="lg:hidden text-blue-700 xs:ml-0 xs:p-0"
                     onClick={() => setOpenNav(!openNav)}
                 >
                     {openNav ? (

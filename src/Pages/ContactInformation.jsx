@@ -9,7 +9,7 @@ function ContactInformation() {
                 <div>
                     <NavbarWithMegaMenu />
                 </div>
-                <div className='flex flex-col mt-12 gap-y-10 pb-0 pl-20 xs:pl-3 '>
+                <div className='flex flex-col mt-12 gap-y-10 pb-0 pl-20 xs:pl-3 ms:pl-3'>
                     <div className='rounded-3xl w-72 xs:w-44 h-56 text-center mx-auto bg-b1 border-orange-700 border-4'>
                         <h1 className='text-3xl pt-4'>
                             Call or Text:
