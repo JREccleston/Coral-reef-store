@@ -5,11 +5,12 @@ import { SimpleFooter } from '../componets/Footer'
 function ContactInformation() {
     return (
         <div className='bg-b2 w-full h-screen xs:h-full' >
-            <div className='flex flex-row items-center justify-center'>
-                <div>
-                    <NavbarWithMegaMenu />
-                </div>
-                <div className='flex flex-col mt-12 gap-y-10 pb-0 pl-20 xs:pl-3 ms:pl-3'>
+            <div>
+                <NavbarWithMegaMenu />
+            </div>
+            <div className='flex flex-row items-center justify-center xs:mt-12 xs:flex xs:flex-col-reverse'>
+
+                <div className='flex flex-col mt-12 gap-y-10 pb-0 pl-20 xs:pl-3 ms:pl-3 xs:flex xs:flex-row xs:gap-2'>
                     <div className='rounded-3xl w-72 xs:w-44 h-56 text-center mx-auto bg-b1 border-orange-700 border-4'>
                         <h1 className='text-3xl pt-4'>
                             Call or Text:
@@ -25,7 +26,7 @@ function ContactInformation() {
                         </p>
                     </div>
                     <div className='rounded-3xl w-72 xs:w-44 h-56 text-center mx-auto bg-b1 border-orange-700 border-4'>
-                        <h1 className='text-2xl pt-16'>
+                        <h1 className='text-2xl lg:pt-16 xs:pt-10'>
                             Location:
                         </h1>
                         <p className='text-lg'>
@@ -36,7 +37,7 @@ function ContactInformation() {
                         </p>
                     </div>
                 </div>
-                <div class=" mt-24 py-8 lg:py-16 px-4 mx-auto w-1/2">
+                <div class=" mt-24 py-8 lg:py-16 lg:px-4 mx-auto w-3/4">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
 
 
@@ -59,7 +60,7 @@ function ContactInformation() {
 
                 </div>
             </div>
-            <div className="sticky top-[100vh]">
+            <div className="sticky top-[100vh] xs:mt-10">
                 <SimpleFooter />
             </div>
         </div>

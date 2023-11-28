@@ -8,7 +8,7 @@ function About() {
             <div className='pb-40'>
                 <NavbarWithMegaMenu />
             </div>
-            <div className=" mx-auto h-auto text-center w-1/2 ms:w-3/4">
+            <div className=" mx-auto h-auto text-center w-1/2 ms:w-3/4 xs:w-3/4">
                 <h1 className='pb-10 text-5xl text-center ms:text-6xl'>
                     Just another hobbiest...
                 </h1>
@@ -24,7 +24,7 @@ function About() {
 
 
             </div>
-            <div className="sticky top-[100vh]">
+            <div className="sticky top-[100vh] xs:mt-10">
                 <SimpleFooter />
             </div>
         </div>

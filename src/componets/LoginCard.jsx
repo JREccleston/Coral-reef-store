@@ -45,7 +45,7 @@ export function LoginCard(props) {
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">
                         {errMsg}
                     </p>
-                    <Card className="w-96 text-center mx-auto mt-20 bg-sky100 font-kalam">
+                    <Card className="w-96 text-center mx-auto mt-20 bg-sky100 font-kalam xs:pb-10">
                         <CardHeader
                             className="mb-4 grid h-20 place-items-center"
                         >

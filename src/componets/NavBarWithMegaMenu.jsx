@@ -149,7 +149,7 @@ export function NavbarWithMegaMenu() {
             className="mx-auto lg:w-full xs:w-full ms:w-full lg:px-28 pb-0 fixed top-0 z-50 bg-b1 border-transparent ">
             <div className="lg:flex lg:items-center lg:justify-between ">
                 <Link to='/Home'> <img
-                    className="lg:w-72 xs:w-fit xs:pl-6 ms:w-6/12 ms:ml-10 bs:ml-10 bs:w-6/12"
+                    className="lg:w-72 xs:w-fit  ms-w-fit bs:ml-10 bs:w-4/12"
                     src="/Images/Logo.png"
                     alt="Logo"
                 />
@@ -175,7 +175,7 @@ export function NavbarWithMegaMenu() {
             <div>
                 <IconButton
                     variant="text"
-                    className="lg:hidden text-blue-700 xs:ml-0 xs:p-0"
+                    className="lg:hidden text-blue-700 xs:ml-0 xs:p-0 xs:text-center xs:mx-auto xs:flex ms:flex ms:mx-auto"
                     onClick={() => setOpenNav(!openNav)}
                 >
                     {openNav ? (
