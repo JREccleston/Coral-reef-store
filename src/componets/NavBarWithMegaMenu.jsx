@@ -149,7 +149,7 @@ export function NavbarWithMegaMenu() {
             className="mx-auto lg:w-full xs:w-full ms-w-full ms:flex ms:flex-row ms:justify-center ms:items-center xs:flex xs:flex-row xs:justify-center xs:items-center lg:px-28 pb-0 fixed top-0 z-50 bg-b1 border-transparent">
             <div className="lg:flex lg:items-center lg:justify-between ">
                 <Link to='/Home'> <img
-                    className="lg:w-72 xs:w-fit xs:pl-6 ms:w-10/12 ms:pl-20"
+                    className="lg:w-72 xs:w-fit xs:pl-6 ms:w-8/12 ms:pl-10 "
                     src="/Images/Logo.png"
                     alt="Logo"
                 />

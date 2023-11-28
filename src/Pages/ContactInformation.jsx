@@ -9,8 +9,8 @@ function ContactInformation() {
                 <div>
                     <NavbarWithMegaMenu />
                 </div>
-                <div className='flex flex-col mt-12 gap-y-10 pb-0 pl-20 '>
-                    <div className='rounded-3xl w-72 h-56 text-center mx-auto bg-b1 border-orange-700 border-4'>
+                <div className='flex flex-col mt-12 gap-y-10 pb-0 pl-20 xs:pl-3 '>
+                    <div className='rounded-3xl w-72 xs:w-44 h-56 text-center mx-auto bg-b1 border-orange-700 border-4'>
                         <h1 className='text-3xl pt-4'>
                             Call or Text:
                         </h1>
@@ -20,11 +20,11 @@ function ContactInformation() {
                         <h1 className='text-3xl pt-4'>
                             Email:
                         </h1>
-                        <p className='text-lg'>
+                        <p className='text-sm'>
                             Thundercorals@gmail.com
                         </p>
                     </div>
-                    <div className='rounded-3xl w-72 h-56 text-center mx-auto bg-b1 border-orange-700 border-4'>
+                    <div className='rounded-3xl w-72 xs:w-44 h-56 text-center mx-auto bg-b1 border-orange-700 border-4'>
                         <h1 className='text-2xl pt-16'>
                             Location:
                         </h1>

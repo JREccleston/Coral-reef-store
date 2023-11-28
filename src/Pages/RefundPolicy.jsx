@@ -10,7 +10,7 @@ function RefundPolicy() {
                 <NavbarWithMegaMenu />
             </div>
 
-            <div className='text-center mx-auto w-1/2 h-auto'>
+            <div className='text-center mx-auto w-1/2 h-auto xs:w-3/4'>
                 <h1 className='pb-10 text-5xl'>Refund Policy</h1>
                 <p className="text-center mx-auto text-xl">
                     All sales are final. Cancellations will be dealt with on a situational basis.
