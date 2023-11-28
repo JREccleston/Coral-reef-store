@@ -100,7 +100,7 @@ function NavListMenu() {
                         />
                     </Button>
                 </MenuHandler>
-                <MenuList className="hidden max-w-screen-xl rounded-xl lg:block bg-sky100">
+                <MenuList className="hidden xs:block ms:block max-w-screen-xl rounded-xl lg:block bg-sky100">
                     <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
                         {renderItems}
                     </ul>
@@ -146,10 +146,10 @@ export function NavbarWithMegaMenu() {
         <Navbar
             variant="filled"
             fullWidth={true}
-            className="mx-auto lg:w-full xs:w-full ms:w-full lg:px-28 pb-0 fixed top-0 z-50 bg-b1 border-transparent ">
+            className="mx-auto lg:w-full xs:w-full ms:w-full lg:px-28 pb-0 fixed top-0 z-50 bg-b1 border-transparent xs:pt-0 ms:pt-0 ">
             <div className="lg:flex lg:items-center lg:justify-between ">
                 <Link to='/Home'> <img
-                    className="lg:w-72 xs:w-fit  ms-w-fit bs:ml-10 bs:w-4/12"
+                    className="lg:w-72 xs:w-fit ms-w-fit"
                     src="/Images/Logo.png"
                     alt="Logo"
                 />

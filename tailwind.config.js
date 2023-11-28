@@ -7,8 +7,8 @@ module.exports = withMT({
     extend: {
       screens: {
         'xs': { 'min': '375px', 'max': '600px' },
-        'ms': { 'min': '601px', 'max': '820px' },
-        'bs': { 'min': '821px', 'max': '1023px' }
+        'ms': { 'min': '601px', 'max': '959px' },
+        'lg': { 'min': '960px' }
 
       },
     },

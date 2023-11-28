@@ -8,7 +8,7 @@ function ShippingPolicy() {
             <div className='pb-40'>
                 <NavbarWithMegaMenu />
             </div>
-            <div className='text-center mx-auto w-1/2 xs:w-3/4 ms:w-3/4 bs:w-3/4'>
+            <div className='text-center mx-auto w-1/2 xs:w-3/4 ms:w-3/4'>
                 <h1 className='text-5xl pb-10 '>
                     Shipping
                 </h1>

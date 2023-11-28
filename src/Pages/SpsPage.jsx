@@ -10,7 +10,7 @@ function SpsPage() {
             <div className='pb-40'>
                 <NavbarWithMegaMenu />
             </div>
-            <div className='text-center text-5xl pb-24 mt-10 w-1/2 mx-auto ms:w-3/4 ms:text-6xl'>
+            <div className='text-center text-5xl pb-24 mt-10 w-1/2 mx-auto ms:w-3/4 ms:text-6xl xs:w-3/4'>
                 <h1 className='pb-3'>
                     SPS Corals
                 </h1>
