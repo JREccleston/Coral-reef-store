@@ -8,7 +8,7 @@ export const sftProducts = [
   {
     id: "Z2",
     name: "Red Zoas",
-    price: "$30.00",
+    price: "$300,000,000.00",
     image: "/Images/Moses.jpg"
   },
 

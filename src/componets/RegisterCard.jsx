@@ -21,7 +21,7 @@ export function RegisterCard(props) {
     }
     return (
 
-        <Card className="w-96 text-center mx-auto mt-20 bg-sky100 font-kalam">
+        <Card className="w-96 text-center mx-auto mt-20 bg-sky100 font-kalam ms:mt-40">
             <CardHeader
                 className="mb-4 grid h-20"
             >
