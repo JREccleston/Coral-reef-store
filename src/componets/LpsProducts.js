@@ -1,36 +1,22 @@
 export const lpsProducts = [
   {
     id: "T1",
-    name: "Dragon Soul Torch",
-    price: 300.00,
-    image: "/Images/Moses.jpg"
+    name: "Holy Grail Torch",
+    price: '$' + 650.00,
+    image: "/Images/torch.jpg"
   },
   {
     id: "T2",
     name: "Todd's Torch",
-    price: 300.00,
+    price: '$' + 650.00,
     image: "/Images/Moses.jpg"
   },
   {
     id: "H1",
     name: "Toxic Hammer",
-    price: 300.00,
+    price: '$' + 650.00,
     image: "/Images/Moses.jpg"
   },
-  {
-    id: "T3",
-    name: "Sun God Torch",
-    price: 300.00,
-    image: "/Images/Moses.jpg"
-  }
-  ,
-  {
-    id: "T4",
-    name: "24K Gold Torch",
-    price: 300.00,
-    image: "/Images/Moses.jpg"
-  }
-
 ]
 
 export function getProductData(id) {
