@@ -8,14 +8,14 @@ export const lpsProducts = [
   {
     id: "T2",
     name: "Todd's Torch",
-    price: '$' + 650.00,
-    image: "/Images/Moses.jpg"
+    price: '$' + 100.00,
+    image: "/Images/Todds-Torch.jpeg"
   },
   {
     id: "H1",
     name: "Toxic Hammer",
-    price: '$' + 650.00,
-    image: "/Images/Moses.jpg"
+    price: '$' + 60.00,
+    image: "/Images/Toxic-hammer.jpg"
   },
 ]
 
