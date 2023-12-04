@@ -1,18 +1,24 @@
 import React from "react";
 import { UilShoppingCart } from '@iconscout/react-unicons'
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Modal } from 'react-bootstrap'
+import { Component } from "./cartModal";
+import { HomeIcon } from "@heroicons/react/24/solid";
 
 import {
     Navbar,
     Collapse,
     Typography,
     Button,
+    Badge,
     IconButton,
     List,
     Menu,
     MenuHandler,
     MenuList,
     MenuItem,
+    Avatar
 } from "@material-tailwind/react";
 import {
     ChevronDownIcon,
@@ -127,6 +133,7 @@ function NavList() {
                 className="font-kalam relative lg:inline-flex lg:items-center lg:justify-center lg:mt-2 lg:mr-28 overflow-hidden text-xl font-normal  text-black rounded-lg hover:bg-orange-700 hover:text-black">
                 <Link to='/About'>About</Link>
             </Button>
+
         </List>
     );
 }
@@ -134,7 +141,9 @@ function NavList() {
 export function NavbarWithMegaMenu() {
 
     const [openNav, setOpenNav] = React.useState(false);
-
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     React.useEffect(() => {
         window.addEventListener(
             "resize",
@@ -143,62 +152,77 @@ export function NavbarWithMegaMenu() {
     }, []);
 
     return (
-        <Navbar
-            variant="filled"
-            fullWidth={true}
-            className="mx-auto lg:w-full xs:w-full ms:w-full lg:px-28 pb-0 fixed top-0 z-50 bg-b1 border-transparent xs:pt-0 ms:pt-0 ">
-            <div className="lg:flex lg:items-center lg:justify-between ">
-                <Link to='/Home'> <img
-                    className="lg:w-72 xs:w-fit ms-w-fit"
-                    src="/Images/Logo.png"
-                    alt="Logo"
-                />
-                </Link>
-                <div className="hidden lg:block">
+        <>
+            <Navbar
+                variant="filled"
+                fullWidth={true}
+                className="mx-auto lg:w-full xs:w-full ms:w-full lg:px-28 pb-0 fixed top-0 z-50 bg-b1 border-transparent xs:pt-0 ms:pt-0 ">
+                <div className="lg:flex lg:items-center lg:justify-between ">
+                    <Link to='/Home'> <img
+                        className="lg:w-72 xs:w-fit ms-w-fit"
+                        src="/Images/Logo.png"
+                        alt="Logo"
+                    />
+                    </Link>
+                    <div className="hidden lg:block">
+                        <NavList />
+                    </div>
+                    <div className="hidden gap-1 lg:flex">
+                        <Button
+                            size="sm"
+                            variant="text"
+                            className="font-kalam relative inline-flex items-center justify-center mt-2 mr-0 overflow-hidden text-lg font-normal
+                             text-black rounded-lg hover:bg-orange-700 hover:text-black">
+                            <Link to='/LoginPage' className="">Log In</Link>
+                        </Button>
+
+                        <div className="flex items-center gap-8">
+                            <Badge content="0"
+                                className="cartbadge bg-orange-700 text-black">
+                                <Component />
+                            </Badge>
+                        </div>
+                    </div>
+                </div >
+                <div>
+                    <IconButton
+                        variant="text"
+                        className="lg:hidden text-blue-700 xs:ml-0 xs:p-0 xs:text-center xs:mx-auto xs:flex ms:flex ms:mx-auto"
+                        onClick={() => setOpenNav(!openNav)}
+                    >
+                        {openNav ? (
+                            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+                        ) : (
+                            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+                        )}
+                    </IconButton>
+                </div>
+
+
+                <Collapse open={openNav}>
                     <NavList />
-                </div>
-                <div className="hidden gap-1 lg:flex">
-                    <Button
-                        size="sm"
-                        variant="text"
-                        className="font-kalam relative inline-flex items-center justify-center mt-2 mr-0 overflow-hidden text-lg font-normal text-black rounded-lg hover:bg-orange-700 hover:text-black">
-                        <Link to='/LoginPage' className="">Log In</Link>
-                    </Button>
-                    <Button
-                        size="sm"
-                        variant="text"
-                        className="relative inline-flex items-center justify-center mt-2 mr-2 px-1 overflow-hidden rounded-lg hover:bg-orange-700">
-                        <Link to='/CartPage' className=""><UilShoppingCart size={27} color="black" /></Link>
-                    </Button>
-                </div>
-            </div >
-            <div>
-                <IconButton
-                    variant="text"
-                    className="lg:hidden text-blue-700 xs:ml-0 xs:p-0 xs:text-center xs:mx-auto xs:flex ms:flex ms:mx-auto"
-                    onClick={() => setOpenNav(!openNav)}
-                >
-                    {openNav ? (
-                        <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-                    ) : (
-                        <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-                    )}
-                </IconButton>
-            </div>
+                    <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
+                        <Button ripple={true} variant="outlined" size="sm" className="text-blue-700 border-orange-400 text-lg font-kalam" fullWidth>
+                            <Link to='/LoginPage' className="">Log In</Link>
+                        </Button>
+                        <Button onClick={handleShow} size="sm" className="flex flex-row items-center justify-center bg-orange-400 text-lg font-kalam" fullWidth>
+                            <UilShoppingCart size={27} color="black" />
+                        </Button>
+                    </div>
+                </Collapse>
+            </Navbar >
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>
+                        Shopping Cart
+                    </Modal.Title>
 
-
-            <Collapse open={openNav}>
-                <NavList />
-                <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-                    <Button ripple={true} variant="outlined" size="sm" className="text-blue-700 border-orange-400 text-lg font-kalam" fullWidth>
-                        <Link to='/LoginPage' className="">Log In</Link>
-                    </Button>
-                    <Button size="sm" className="flex flex-row items-center justify-center bg-orange-400 text-lg font-kalam" fullWidth>
-                        <Link to='/CartPage' className=""><UilShoppingCart size={27} color="black" /></Link>
-                    </Button>
-                </div>
-            </Collapse>
-        </Navbar >
+                </Modal.Header>
+                <Modal.Body>
+                    <h1>This is Body</h1>
+                </Modal.Body>
+            </Modal>
+        </>
     );
 
 }

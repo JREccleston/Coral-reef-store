@@ -27,6 +27,7 @@ function ShippingPolicy() {
 
                 </p>
             </div>
+
             <div className="sticky top-[100vh] xs:mt-10">
                 <SimpleFooter />
             </div>

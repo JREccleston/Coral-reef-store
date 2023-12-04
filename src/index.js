@@ -15,6 +15,8 @@ import SftPage from './Pages/SftPage';
 import HomePage from './HomePage';
 import LoginPage from './Pages/Login';
 import CartPage from './Pages/CartPage';
+import { HiShoppingCart } from 'react-icons/hi';
+
 
 // const http = require('http');
 // const port = 3000;

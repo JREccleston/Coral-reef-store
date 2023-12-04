@@ -1,37 +1,47 @@
 export const lpsProducts = [
   {
-    id: "1",
+    id: "T1",
     name: "Dragon Soul Torch",
-    price: "$100.00",
+    price: 300.00,
     image: "/Images/Moses.jpg"
   },
   {
-    id: "2",
+    id: "T2",
     name: "Todd's Torch",
-    price: "$50.00",
+    price: 300.00,
     image: "/Images/Moses.jpg"
   },
   {
-    id: "3",
+    id: "H1",
     name: "Toxic Hammer",
-    price: "$75.00",
+    price: 300.00,
     image: "/Images/Moses.jpg"
   },
   {
-    id: "4",
+    id: "T3",
     name: "Sun God Torch",
-    price: "$300.00",
+    price: 300.00,
     image: "/Images/Moses.jpg"
   }
   ,
   {
-    id: "5",
+    id: "T4",
     name: "24K Gold Torch",
-    price: "$300.00",
+    price: 300.00,
     image: "/Images/Moses.jpg"
   }
 
 ]
+
+export function getProductData(id) {
+  let productdata = lpsProducts.find(product => product.id === id)
+  if (productdata === undefined) {
+    return undefined
+  }
+
+  return productdata;
+};
+
 export let lpsProductContainer = ""
 lpsProducts.forEach((product) => {
   lpsProductContainer += `
@@ -54,7 +64,8 @@ lpsProducts.forEach((product) => {
     </div>
     <div class="p-6 pt-0">
       <button
-        class="block w-full select-none rounded-lg bg-orange-700 py-3 px-6 text-center align-middle font-kalam text-base font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+      id="add-to-cart"
+        class="add-to-cart block w-full select-none rounded-lg bg-orange-700 py-3 px-6 text-center align-middle font-kalam text-base font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         type="button"
       >
         Add to Cart
@@ -64,9 +75,43 @@ lpsProducts.forEach((product) => {
 
 })
 
+let carts = document.querySelectorAll('.add-to-cart');
+
+
+for (let i = 0; i < carts.length; i++) {
+  carts[i].addEventListener('click', () => {
+    cartNumbers();
+  })
+}
 
 
 
+function cartNumbers() {
+  let productNumbers = localStorage.getItem('cartNumbers');
 
+  productNumbers = parseInt(productNumbers);
+
+  if (productNumbers) {
+    localStorage.setItem('cartNumbers', productNumbers + 1);
+    document.querySelector('.cartbadge').textContent = productNumbers + 1;
+  } else {
+    localStorage.setItem('cartNumbers', 1)
+    document.querySelector('.cartbadge').textContent = 1
+
+  }
+
+}
+
+
+// function onLoadCartNumbers() {
+//   let productNumbers = localStorage.getItem('cartNumbers');
+//   productNumbers = parseInt(productNumbers);
+
+//   if (productNumbers) {
+//     document.querySelector('.cartbadge').textContent = productNumbers;
+//   }
+// }
+
+// onLoadCartNumbers();
 
 

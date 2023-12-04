@@ -4,35 +4,38 @@ import { HomePageText } from './componets/HomePageText';
 import { SimpleFooter } from './componets/Footer';
 import { HomePageCard } from './componets/HomePageCard';
 import { lpsDesc, spsDesc, sftDesc, acroPic, hammerPic, zoaPic, lpsCategory, spsCategory, sftCategory } from './componets/strings';
-
-
+import CartProvider from './CartContext';
 
 
 
 function HomePage() {
   return (
-    <div className=" bg-b2  w-full h-full">
-      <div className='lg:pb-40 xs:pb-28 ms:pb-40 '>
-        <NavbarWithMegaMenu />
-      </div>
-      <div>
-        <div className='ms:mt-20 xs:mt-20'>
-          <HomePageText />
+    <CartProvider>
+      <div className=" bg-b2  w-full h-full">
+        <div className='lg:pb-40 xs:pb-28 ms:pb-40 '>
+          <NavbarWithMegaMenu />
+
         </div>
-        <div className='lg:flex ms:mt-10 lg:flex-row lg:items-center lg:justify-center lg:mt-20 lg:gap-10  flex flex-col items-center justify-center ms:gap-10  xs:items-center xs:justify-center xs:flex xs:flex-col xs:gap-10'>
-          <HomePageCard species={lpsDesc} coralType={"LPS"} coralImg={hammerPic} coralCategory={lpsCategory} productPage={"/LpsPage"} />
+        <div>
 
-          < HomePageCard species={spsDesc} coralType={"SPS"} coralImg={acroPic} coralCategory={spsCategory} productPage={"/SpsPage"} />
+          <div className='ms:mt-20 xs:mt-20'>
+            <HomePageText />
+          </div>
+          <div className='lg:flex ms:mt-10 lg:flex-row lg:items-center lg:justify-center lg:mt-20 lg:gap-10  flex flex-col items-center justify-center ms:gap-10  xs:items-center xs:justify-center xs:flex xs:flex-col xs:gap-10'>
+            <HomePageCard species={lpsDesc} coralType={"LPS"} coralImg={hammerPic} coralCategory={lpsCategory} productPage={"/LpsPage"} />
 
-          <HomePageCard species={sftDesc} coralType={"Softies"} coralImg={zoaPic} coralCategory={sftCategory} productPage={"/SftPage"} />
+            < HomePageCard species={spsDesc} coralType={"SPS"} coralImg={acroPic} coralCategory={spsCategory} productPage={"/SpsPage"} />
+
+            <HomePageCard species={sftDesc} coralType={"Softies"} coralImg={zoaPic} coralCategory={sftCategory} productPage={"/SftPage"} />
+          </div >
         </div >
+
+        <div className="lg:mt-20 lg:pb-0 sticky top-[100vh] xs:mt-10 ms:mt-10 ">
+          <SimpleFooter />
+        </div>
+
       </div >
-
-      <div className="lg:mt-20 lg:pb-0 sticky top-[100vh] xs:mt-10 ms:mt-10 ">
-        <SimpleFooter />
-      </div>
-
-    </div >
+    </CartProvider>
   );
 }
 
