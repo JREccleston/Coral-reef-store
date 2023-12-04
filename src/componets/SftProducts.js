@@ -2,14 +2,14 @@ export const sftProducts = [
   {
     id: "Z1",
     name: "Scrambled Eggs Zoas",
-    price: "$50.00",
-    image: "/Images/Moses.jpg"
+    price: '$' + 50.00,
+    image: "/Images/scrambled-egg-zoanthus-top-shelf-aquatics.jpg"
   },
   {
     id: "Z2",
     name: "Red Zoas",
-    price: "$300,000,000.00",
-    image: "/Images/Moses.jpg"
+    price: '$' + 30.00,
+    image: "/Images/redZoas.webp"
   },
 
 

@@ -2,14 +2,14 @@ export const spsProducts = [
   {
     id: "A1",
     name: "Bali Green Slimer",
-    price: "$50.00",
-    image: "/Images/Moses.jpg"
+    price: '$' + 50.00,
+    image: "/Images/GreenSlimer.webp"
   },
   {
     id: "A2",
     name: "TSA Wolly Mammoth",
-    price: "$150.00",
-    image: "/Images/Moses.jpg"
+    price: '$' + 150.00,
+    image: "/Images/woolly-mammoth-e1576707077271_2.webp"
   },
 
 
