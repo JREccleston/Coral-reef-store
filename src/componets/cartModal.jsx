@@ -30,8 +30,8 @@ export function Component() {
                 </Modal.Body>
                 <Modal.Footer className='bg-sky100 border-none'>
                     <div className='flex flex-row gap-x-4'>
-                        <Button color='none' className="rounded-full bg-orange-700  font-sans hover:scale-110 text-white" onClick={() => setOpenModal(false)}>Continue Shopping </Button>
-                        <Button color='none' className="rounded-full bg-orange-700 font-sans hover:scale-110 text-white" onClick={() => setOpenModal(false)}>
+                        <Button className="rounded-full bg-orange-700  font-sans hover:scale-110 text-white" onClick={() => setOpenModal(false)}>Continue Shopping </Button>
+                        <Button className="rounded-full bg-orange-700 font-sans hover:scale-110 text-white" onClick={() => setOpenModal(false)}>
                             Checkout
                         </Button>
                     </div>
